@@ -243,4 +243,29 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("CaraVista Global Website Version 1.0 Loaded");
 
 });
+/*==================================
+MOBILE MENU
+==================================*/
 
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+if(menuToggle){
+
+menuToggle.addEventListener("click",function(){
+
+navbar.classList.toggle("show");
+
+});
+
+}
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+navbar.classList.remove("show");
+
+});
+
+});
