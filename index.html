@@ -5,18 +5,23 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>CaraVista Global Education | Study in Ireland</title>
 
     <meta name="description"
-          content="CaraVista Global Education provides personalised guidance for studying in Ireland, including university applications, visa assistance and end-to-end student support.">
+          content="CaraVista Global Education provides personalised guidance for studying in Ireland, including programme selection, university applications, visa guidance and end-to-end student support.">
 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon"
+          type="image/x-icon"
+          href="favicon.ico">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -36,7 +41,8 @@
      HEADER
 ========================================= -->
 
-<header id="site-header">
+<header class="site-header"
+        id="site-header">
 
     <div class="container header-inner">
 
@@ -44,8 +50,17 @@
            href="#home"
            aria-label="CaraVista Global Education home">
 
-            <img src="images/logo.png"
+            <img id="site-logo"
+                 src="logo.png"
                  alt="CaraVista Global Education logo">
+
+            <span class="logo-fallback"
+                  id="logo-fallback">
+
+                <strong>CaraVista</strong>
+                <small>Global Education</small>
+
+            </span>
 
         </a>
 
@@ -53,14 +68,15 @@
                 id="menu-toggle"
                 type="button"
                 aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="navbar">
+                aria-controls="navbar"
+                aria-expanded="false">
 
             <i class="fa-solid fa-bars"></i>
 
         </button>
 
-        <nav id="navbar"
+        <nav class="navbar"
+             id="navbar"
              aria-label="Main navigation">
 
             <a href="#home">Home</a>
@@ -78,7 +94,7 @@
             <a href="#contact">Contact</a>
 
             <a href="#contact"
-               class="apply-btn">
+               class="nav-cta">
 
                 Free Consultation
 
@@ -90,26 +106,20 @@
 
 </header>
 
+<!-- =========================================
+     MAIN CONTENT
+========================================= -->
+
 <main>
 
-    <!-- =========================================
-         HERO
-    ========================================= -->
+    <!-- HERO BANNER -->
 
     <section class="hero"
              id="home">
 
-        <div class="hero-decoration hero-decoration-one"></div>
-
-        <div class="hero-decoration hero-decoration-two"></div>
+        <div class="hero-overlay"></div>
 
         <div class="container hero-content">
-
-            <p class="hero-eyebrow">
-
-                EXPECT EXCELLENCE
-
-            </p>
 
             <h1>
 
@@ -121,7 +131,7 @@
             <p class="hero-description">
 
                 Personalised counselling, university application guidance,
-                visa assistance and end-to-end support for students aspiring
+                visa assistance and end-to-end support for students planning
                 to study in Ireland.
 
             </p>
@@ -149,7 +159,6 @@
                 <span>
 
                     <i class="fa-solid fa-user-graduate"></i>
-
                     Admissions Guidance
 
                 </span>
@@ -157,7 +166,6 @@
                 <span>
 
                     <i class="fa-solid fa-passport"></i>
-
                     Visa Support
 
                 </span>
@@ -165,7 +173,6 @@
                 <span>
 
                     <i class="fa-solid fa-handshake-angle"></i>
-
                     End-to-End Assistance
 
                 </span>
@@ -176,12 +183,10 @@
 
     </section>
 
-    <!-- =========================================
-         ABOUT
-    ========================================= -->
+    <!-- ABOUT -->
 
-    <section id="about"
-             class="section section-white">
+    <section class="section section-white"
+             id="about">
 
         <div class="container narrow">
 
@@ -213,8 +218,7 @@
 
                 From programme selection and university applications to visa
                 preparation and pre-departure guidance, we support students
-                at every important stage of their international education
-                journey.
+                throughout their international education journey.
 
             </p>
 
@@ -222,12 +226,10 @@
 
     </section>
 
-    <!-- =========================================
-         WHY CARAVISTA
-    ========================================= -->
+    <!-- WHY CARAVISTA -->
 
-    <section id="why"
-             class="section section-soft">
+    <section class="section section-soft"
+             id="why">
 
         <div class="container">
 
@@ -264,11 +266,7 @@
 
                     </div>
 
-                    <h3>
-
-                        Personalised Counselling
-
-                    </h3>
+                    <h3>Personalised Counselling</h3>
 
                     <p>
 
@@ -287,11 +285,7 @@
 
                     </div>
 
-                    <h3>
-
-                        Application Support
-
-                    </h3>
+                    <h3>Application Support</h3>
 
                     <p>
 
@@ -310,11 +304,7 @@
 
                     </div>
 
-                    <h3>
-
-                        Visa Guidance
-
-                    </h3>
+                    <h3>Visa Guidance</h3>
 
                     <p>
 
@@ -333,16 +323,12 @@
 
                     </div>
 
-                    <h3>
-
-                        Career-Focused Choices
-
-                    </h3>
+                    <h3>Career-Focused Choices</h3>
 
                     <p>
 
-                        Programme recommendations aligned with your future
-                        academic and professional plans.
+                        Programme recommendations aligned with your academic
+                        and professional plans.
 
                     </p>
 
@@ -356,11 +342,7 @@
 
                     </div>
 
-                    <h3>
-
-                        Pre-Departure Support
-
-                    </h3>
+                    <h3>Pre-Departure Support</h3>
 
                     <p>
 
@@ -379,16 +361,12 @@
 
                     </div>
 
-                    <h3>
-
-                        End-to-End Assistance
-
-                    </h3>
+                    <h3>End-to-End Assistance</h3>
 
                     <p>
 
-                        One consistent support system from the first
-                        consultation to your departure.
+                        One consistent support system from your first
+                        consultation through departure.
 
                     </p>
 
@@ -400,12 +378,10 @@
 
     </section>
 
-    <!-- =========================================
-         STUDY IN IRELAND
-    ========================================= -->
+    <!-- STUDY IN IRELAND -->
 
-    <section id="study"
-             class="section section-white">
+    <section class="section section-white"
+             id="study">
 
         <div class="container">
 
@@ -425,9 +401,9 @@
 
             </div>
 
-            <div class="cards cards-four compact-cards">
+            <div class="cards cards-four">
 
-                <article class="card">
+                <article class="card compact-card">
 
                     <div class="icon">
 
@@ -435,11 +411,7 @@
 
                     </div>
 
-                    <h3>
-
-                        Quality Education
-
-                    </h3>
+                    <h3>Quality Education</h3>
 
                     <p>
 
@@ -450,7 +422,7 @@
 
                 </article>
 
-                <article class="card">
+                <article class="card compact-card">
 
                     <div class="icon">
 
@@ -458,11 +430,7 @@
 
                     </div>
 
-                    <h3>
-
-                        Work Exposure
-
-                    </h3>
+                    <h3>Work Exposure</h3>
 
                     <p>
 
@@ -473,7 +441,7 @@
 
                 </article>
 
-                <article class="card">
+                <article class="card compact-card">
 
                     <div class="icon">
 
@@ -481,11 +449,7 @@
 
                     </div>
 
-                    <h3>
-
-                        Global Outlook
-
-                    </h3>
+                    <h3>Global Outlook</h3>
 
                     <p>
 
@@ -496,7 +460,7 @@
 
                 </article>
 
-                <article class="card">
+                <article class="card compact-card">
 
                     <div class="icon">
 
@@ -504,11 +468,7 @@
 
                     </div>
 
-                    <h3>
-
-                        Welcoming Environment
-
-                    </h3>
+                    <h3>Welcoming Environment</h3>
 
                     <p>
 
@@ -525,12 +485,10 @@
 
     </section>
 
-    <!-- =========================================
-         SERVICES
-    ========================================= -->
+    <!-- SERVICES -->
 
-    <section id="services"
-             class="section section-soft">
+    <section class="section section-soft"
+             id="services">
 
         <div class="container">
 
@@ -606,12 +564,10 @@
 
     </section>
 
-    <!-- =========================================
-         UNIVERSITIES
-    ========================================= -->
+    <!-- UNIVERSITIES -->
 
-    <section id="universities"
-             class="section section-white">
+    <section class="section section-white"
+             id="universities">
 
         <div class="container">
 
@@ -633,8 +589,8 @@
 
                     We help students explore suitable programmes across higher
                     education institutions in Ireland. The institutions below
-                    are shown for information only and do not imply a formal
-                    partnership or endorsement.
+                    are listed for informational purposes only and do not imply
+                    a formal partnership or endorsement.
 
                 </p>
 
@@ -680,12 +636,10 @@
 
     </section>
 
-    <!-- =========================================
-         PARTNER
-    ========================================= -->
+    <!-- PARTNER -->
 
-    <section id="partner"
-             class="partner-section">
+    <section class="partner-section"
+             id="partner">
 
         <div class="container narrow">
 
@@ -713,12 +667,10 @@
 
     </section>
 
-    <!-- =========================================
-         CONTACT
-    ========================================= -->
+    <!-- CONTACT -->
 
-    <section id="contact"
-             class="section section-white">
+    <section class="section section-white"
+             id="contact">
 
         <div class="container">
 
@@ -738,8 +690,8 @@
 
                 <p class="section-intro">
 
-                    Share your details and our team will contact you to
-                    discuss your study plans.
+                    Share your details and our team will contact you to discuss
+                    your study plans.
 
                 </p>
 
@@ -749,56 +701,143 @@
 
                 <div class="contact-form">
 
-                    <form id="contactForm">
+                    <form id="contactForm"
+                          novalidate>
+
+                        <input type="hidden"
+                               name="subject"
+                               value="New CaraVista Website Enquiry">
+
+                        <input type="hidden"
+                               name="reply_to"
+                               id="reply_to">
 
                         <div class="form-row">
 
-                            <input type="text"
-                                   name="name"
-                                   placeholder="Full Name"
-                                   autocomplete="name"
-                                   required>
+                            <div class="form-group">
 
-                            <input type="email"
-                                   name="email"
-                                   placeholder="Email Address"
-                                   autocomplete="email"
-                                   required>
+                                <label for="name">
+
+                                    Full Name
+
+                                </label>
+
+                                <input type="text"
+                                       id="name"
+                                       name="name"
+                                       placeholder="Enter your full name"
+                                       autocomplete="name"
+                                       required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="email">
+
+                                    Email Address
+
+                                </label>
+
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       placeholder="Enter your email address"
+                                       autocomplete="email"
+                                       required>
+
+                            </div>
 
                         </div>
 
                         <div class="form-row">
 
-                            <input type="tel"
-                                   id="phone"
-                                   name="phone"
-                                   placeholder="Phone Number"
-                                   maxlength="10"
-                                   pattern="[0-9]{10}"
-                                   inputmode="numeric"
-                                   autocomplete="tel"
-                                   oninput="this.value=this.value.replace(/[^0-9]/g,'')"
-                                   required>
+                            <div class="form-group">
 
-                            <input type="text"
-                                   name="course"
-                                   placeholder="Preferred Course">
+                                <label for="phone">
+
+                                    Phone Number
+
+                                </label>
+
+                                <input type="tel"
+                                       id="phone"
+                                       name="phone"
+                                       placeholder="Enter 10-digit phone number"
+                                       maxlength="10"
+                                       minlength="10"
+                                       pattern="[0-9]{10}"
+                                       inputmode="numeric"
+                                       autocomplete="tel"
+                                       required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="course">
+
+                                    Preferred Course
+
+                                </label>
+
+                                <input type="text"
+                                       id="course"
+                                       name="course"
+                                       placeholder="Enter your preferred course">
+
+                            </div>
 
                         </div>
 
-                        <textarea name="message"
-                                  placeholder="Your Message"
-                                  rows="4"></textarea>
+                        <div class="form-group">
+
+                            <label for="message">
+
+                                Your Message
+
+                            </label>
+
+                            <textarea id="message"
+                                      name="message"
+                                      rows="4"
+                                      placeholder="Tell us about your study plans"></textarea>
+
+                        </div>
+
+                        <div class="form-honeypot"
+                             aria-hidden="true">
+
+                            <label for="website">
+
+                                Website
+
+                            </label>
+
+                            <input type="text"
+                                   id="website"
+                                   name="website"
+                                   tabindex="-1"
+                                   autocomplete="off">
+
+                        </div>
 
                         <button type="submit"
-                                class="btn btn-primary">
+                                class="btn btn-primary submit-button">
 
-                            Send Enquiry
+                            <span class="button-text">
+
+                                Send Enquiry
+
+                            </span>
+
+                            <i class="fa-solid fa-paper-plane"></i>
 
                         </button>
 
                         <p class="form-status"
                            id="form-status"
+                           role="status"
                            aria-live="polite"></p>
 
                     </form>
@@ -807,11 +846,7 @@
 
                 <aside class="contact-info">
 
-                    <h3>
-
-                        Contact Details
-
-                    </h3>
+                    <h3>Contact Details</h3>
 
                     <a class="contact-link"
                        href="tel:+917820959808">
@@ -849,6 +884,41 @@
 
                     </p>
 
+                    <div class="social-links"
+                         aria-label="CaraVista social media links">
+
+                        <a href="https://www.instagram.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Instagram"
+                           title="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="https://www.linkedin.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn"
+                           title="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+                        <a href="https://x.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="X, formerly Twitter"
+                           title="X, formerly Twitter">
+
+                            <i class="fa-brands fa-x-twitter"></i>
+
+                        </a>
+
+                    </div>
+
                 </aside>
 
             </div>
@@ -863,15 +933,11 @@
      FOOTER
 ========================================= -->
 
-<footer>
+<footer class="site-footer">
 
     <div class="container footer-content">
 
-        <h3>
-
-            CaraVista Global Education
-
-        </h3>
+        <h3>CaraVista Global Education</h3>
 
         <p>
 
@@ -897,19 +963,14 @@
 
         <p>
 
-            <strong>Expect Excellence.</strong>
-
-        </p>
-
-        <p>
-
             In partnership with Techfynder, Ireland.
 
         </p>
 
         <p class="copyright">
 
-            © 2026 CaraVista Global Education. All Rights Reserved.<br>
+            © <span id="current-year">2026</span>
+            CaraVista Global Education. All Rights Reserved.<br>
 
             Website developed and designed for CaraVista Global Education
             in accordance with a contractual agreement with Techfynder.
@@ -926,27 +987,19 @@
    href="https://wa.me/917820959808"
    target="_blank"
    rel="noopener noreferrer"
-   aria-label="Chat with CaraVista on WhatsApp">
+   aria-label="Chat with CaraVista Global Education on WhatsApp">
 
     <i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
-<!-- EMAILJS -->
+<!-- JAVASCRIPT -->
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
+<script src="script.js"></script>
 
-    emailjs.init({
-        publicKey: "V02rEeRqQ4n_f7IHq"
-    });
-
-</script>
-
-<script src="js/script.js"></script>
-
-<script src="js/email.js"></script>
+<script src="email.js"></script>
 
 </body>
 
