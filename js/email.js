@@ -6,15 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const EMAILJS_PUBLIC_KEY = "V02rEeRqQ4n_f7IHq";
     const EMAILJS_SERVICE_ID = "service_1t2sejo";
-
-    // Contact Us template: sends enquiry to CaraVista
-    const INTERNAL_TEMPLATE_ID = "template_uwpy087";
-
-    // Auto-Reply template: sends acknowledgement to the student
-    const AUTO_REPLY_TEMPLATE_ID = "template_3hu1rd4";
+    const EMAILJS_TEMPLATE_ID = "template_uwpy087";
 
     if (!contactForm || !formStatus) {
-        console.error("Contact form or status element was not found.");
+        console.error("Contact form or form status element was not found.");
         return;
     }
 
@@ -32,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
         publicKey: EMAILJS_PUBLIC_KEY
     });
 
-    // Allow numbers only and limit phone number to 10 digits
     if (phoneInput) {
         phoneInput.addEventListener("input", () => {
             phoneInput.value = phoneInput.value
@@ -76,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
             course: course || "Not specified",
             message: message || "No additional message provided",
             reply_to: email,
-            student_email: email,
             to_email: "info@caravistaglobal.com",
             submitted_at: new Date().toLocaleString("en-IN", {
                 dateStyle: "medium",
@@ -88,70 +81,31 @@ document.addEventListener("DOMContentLoaded", () => {
         showStatus("Sending your enquiry…", "sending");
 
         try {
-            // First email: enquiry sent to CaraVista
-            const internalResponse = await emailjs.send(
+            const response = await emailjs.send(
                 EMAILJS_SERVICE_ID,
-                INTERNAL_TEMPLATE_ID,
+                EMAILJS_TEMPLATE_ID,
                 templateParams
             );
 
             console.log(
                 "CaraVista enquiry email sent successfully:",
-                internalResponse
+                response
             );
-
-            /*
-             * EmailJS limits requests to approximately one request per second.
-             * Wait before sending the acknowledgement email.
-             */
-            await delay(1200);
-
-            let acknowledgementSent = false;
-
-            try {
-                // Second email: acknowledgement sent to the student
-                const acknowledgementResponse = await emailjs.send(
-                    EMAILJS_SERVICE_ID,
-                    AUTO_REPLY_TEMPLATE_ID,
-                    templateParams
-                );
-
-                acknowledgementSent = true;
-
-                console.log(
-                    "Student acknowledgement email sent successfully:",
-                    acknowledgementResponse
-                );
-            } catch (acknowledgementError) {
-                console.error(
-                    "Student acknowledgement email failed:",
-                    acknowledgementError
-                );
-            }
 
             contactForm.reset();
 
-            if (acknowledgementSent) {
-                showStatus(
+            showStatus(
 `✅ Thank you!
 
 Your enquiry has been received successfully.
 
-A confirmation email has been sent to your registered email address.
+Our admissions team will contact you shortly.
 
-Our admissions team will contact you shortly.`,
-                    "success"
-                );
-            } else {
-                showStatus(
-`✅ Thank you!
-
-Your enquiry has been received successfully.
-
-Our admissions team will contact you shortly.`,
-                    "success"
-                );
-            }
+For urgent assistance:
+Phone: +91 78209 59808
+Email: info@caravistaglobal.com`,
+                "success"
+            );
         } catch (error) {
             console.error("CaraVista enquiry email failed:", error);
 
@@ -168,12 +122,6 @@ Our admissions team will contact you shortly.`,
             setSendingState(false);
         }
     });
-
-    function delay(milliseconds) {
-        return new Promise((resolve) => {
-            setTimeout(resolve, milliseconds);
-        });
-    }
 
     function setSendingState(isSending) {
         if (!submitButton) {
