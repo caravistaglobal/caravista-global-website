@@ -79,22 +79,62 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         };
 
-        try {
-            const response = await emailjs.send(
-                EMAILJS_SERVICE_ID,
-                EMAILJS_TEMPLATE_ID,
-                templateParams,
-                {
-                    publicKey: EMAILJS_PUBLIC_KEY
-                }
-            );
+ try {
 
-            console.log("EmailJS success:", response);
+    // Send enquiry to CaraVista
+    const response = await emailjs.send(
+        SERVICE_ID,
+        "template_uwpy087",
+        templateParams
+    );
 
-            showStatus(
-                "Thank you! Your enquiry has been sent successfully. Our team will contact you shortly.",
-                "success"
-            );
+    console.log("Internal email sent:", response);
+
+    showStatus(
+`✅ Thank you!
+
+Your enquiry has been received successfully.
+
+Our admissions team will contact you shortly.`,
+        "success"
+    );
+
+    contactForm.reset();
+
+    // Send acknowledgement email separately
+    try {
+
+        await emailjs.send(
+            SERVICE_ID,
+            "template_3hu1rd4",
+            templateParams
+        );
+
+        console.log("Acknowledgement email sent.");
+
+    } catch (ackError) {
+
+        console.error("Acknowledgement email failed:", ackError);
+
+    }
+
+} catch (error) {
+
+    console.error("EmailJS sending failed:", error);
+
+    const errorDetails =
+        error?.text ||
+        error?.message ||
+        "Unknown EmailJS error";
+
+    showStatus(
+        `Your enquiry could not be sent.
+
+Error: ${errorDetails}`,
+        "error"
+    );
+
+}
 
             contactForm.reset();
         } catch (error) {
