@@ -1,200 +1,139 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById("contactForm");
+    const phoneInput = document.getElementById("phone");
+    const formStatus = document.getElementById("form-status");
+    const submitButton = contactForm?.querySelector('button[type="submit"]');
 
-    const contactForm =
-        document.getElementById("contactForm");
+    const EMAILJS_PUBLIC_KEY = "V02rEeRqQ4n_f7IHq";
+    const EMAILJS_SERVICE_ID = "service_1t2sejo";
+    const EMAILJS_TEMPLATE_ID = "template_uwpy087";
 
-    const phoneInput =
-        document.getElementById("phone");
-
-    const formStatus =
-        document.getElementById("form-status");
-
-    const EMAILJS_PUBLIC_KEY =
-        "V02rEeRqQ4n_f7IHq";
-
-    const EMAILJS_SERVICE_ID =
-        "service_1t2sejo";
-
-    const EMAILJS_TEMPLATE_ID =
-        "template_uwpy087";
-
-    if (!contactForm) {
-
-        console.error(
-            "Contact form with id contactForm was not found."
-        );
-
+    if (!contactForm || !formStatus) {
+        console.error("Contact form or form-status element was not found.");
         return;
-
     }
 
     if (typeof emailjs === "undefined") {
-
-        console.error(
-            "EmailJS library is not loaded."
-        );
-
         showStatus(
-            "The enquiry service is temporarily unavailable. Please try again later.",
+            "The enquiry service could not be loaded. Please refresh the page and try again.",
             "error"
         );
-
+        console.error("EmailJS browser library is not loaded.");
         return;
-
     }
 
     emailjs.init({
-
-        publicKey:EMAILJS_PUBLIC_KEY
-
+        publicKey: EMAILJS_PUBLIC_KEY
     });
 
     if (phoneInput) {
-
-        phoneInput.addEventListener(
-            "input",
-            function () {
-
-                phoneInput.value =
-                    phoneInput.value
-                    .replace(/[^0-9]/g, "")
-                    .slice(0,10);
-
-            }
-        );
-
+        phoneInput.addEventListener("input", () => {
+            phoneInput.value = phoneInput.value
+                .replace(/\D/g, "")
+                .slice(0, 10);
+        });
     }
 
-    contactForm.addEventListener(
-        "submit",
-        async function (event) {
+    contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-            event.preventDefault();
+        formStatus.textContent = "";
+        formStatus.className = "form-status";
 
-            const submitButton =
-                contactForm.querySelector(
-                    'button[type="submit"]'
-                );
+        const formData = new FormData(contactForm);
 
-            const phone =
-                phoneInput
-                ? phoneInput.value.trim()
-                : "";
+        const name = String(formData.get("name") || "").trim();
+        const email = String(formData.get("email") || "").trim();
+        const phone = String(formData.get("phone") || "").trim();
+        const course = String(formData.get("course") || "").trim();
+        const message = String(formData.get("message") || "").trim();
 
-            if (!/^[0-9]{10}$/.test(phone)) {
+        if (!contactForm.checkValidity()) {
+            contactForm.reportValidity();
+            return;
+        }
 
-                showStatus(
-                    "Please enter a valid 10-digit phone number.",
-                    "error"
-                );
-
-                if (phoneInput) {
-
-                    phoneInput.focus();
-
-                }
-
-                return;
-
-            }
-
-            if (!contactForm.checkValidity()) {
-
-                contactForm.reportValidity();
-
-                return;
-
-            }
-
-            if (submitButton) {
-
-                submitButton.disabled = true;
-
-                submitButton.textContent =
-                    "Sending...";
-
-            }
-
+        if (!/^\d{10}$/.test(phone)) {
             showStatus(
-                "Sending your enquiry...",
-                ""
+                "Please enter a valid 10-digit phone number.",
+                "error"
+            );
+            phoneInput?.focus();
+            return;
+        }
+
+        setSendingState(true);
+        showStatus("Sending your enquiry…", "sending");
+
+        const templateParams = {
+            name: name,
+            email: email,
+            phone: phone,
+            course: course || "Not specified",
+            message: message || "No additional message provided",
+            reply_to: email,
+            to_email: "info@caravistaglobal.com",
+            submitted_at: new Date().toLocaleString("en-IN", {
+                dateStyle: "medium",
+                timeStyle: "short"
+            })
+        };
+
+        try {
+            const response = await emailjs.send(
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
+                templateParams,
+                {
+                    publicKey: EMAILJS_PUBLIC_KEY
+                }
             );
 
-            try {
+            console.log("EmailJS success:", response);
 
-                const response =
-                    await emailjs.sendForm(
+            showStatus(
+                "Thank you! Your enquiry has been sent successfully. Our team will contact you shortly.",
+                "success"
+            );
 
-                        EMAILJS_SERVICE_ID,
+            contactForm.reset();
+        } catch (error) {
+            console.error("EmailJS sending failed:", error);
 
-                        EMAILJS_TEMPLATE_ID,
+            const errorDetails =
+                error?.text ||
+                error?.message ||
+                "Unknown EmailJS error";
 
-                        contactForm
-
-                    );
-
-                console.log(
-                    "EmailJS success:",
-                    response.status,
-                    response.text
-                );
-
-                showStatus(
-                    "Thank you! Your enquiry has been sent successfully.",
-                    "success"
-                );
-
-                contactForm.reset();
-
-            } catch (error) {
-
-                console.error(
-                    "EmailJS error:",
-                    error
-                );
-
-                showStatus(
-                    "Sorry, your enquiry could not be sent. Please try again.",
-                    "error"
-                );
-
-            } finally {
-
-                if (submitButton) {
-
-                    submitButton.disabled = false;
-
-                    submitButton.textContent =
-                        "Send Enquiry";
-
-                }
-
-            }
-
+            showStatus(
+                `Your enquiry could not be sent. Error: ${errorDetails}`,
+                "error"
+            );
+        } finally {
+            setSendingState(false);
         }
-    );
+    });
 
-    function showStatus(message,type) {
+    function setSendingState(isSending) {
+        if (!submitButton) return;
 
-        if (!formStatus) {
-
-            alert(message);
-
-            return;
-
-        }
-
-        formStatus.textContent = message;
-
-        formStatus.className =
-            "form-status";
-
-        if (type) {
-
-            formStatus.classList.add(type);
-
-        }
-
+        submitButton.disabled = isSending;
+        submitButton.textContent = isSending
+            ? "Sending…"
+            : "Send Enquiry";
     }
 
+    function showStatus(message, type) {
+        formStatus.textContent = message;
+        formStatus.className = "form-status";
+
+        if (type) {
+            formStatus.classList.add(type);
+        }
+
+        formStatus.setAttribute(
+            "role",
+            type === "error" ? "alert" : "status"
+        );
+    }
 });
