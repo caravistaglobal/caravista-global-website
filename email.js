@@ -1,147 +1,200 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const contactForm = document.getElementById("contactForm");
-    const phoneInput = document.getElementById("phone");
-    const formStatus = document.getElementById("form-status");
+    const contactForm =
+        document.getElementById("contactForm");
+
+    const phoneInput =
+        document.getElementById("phone");
+
+    const formStatus =
+        document.getElementById("form-status");
+
+    const EMAILJS_PUBLIC_KEY =
+        "V02rEeRqQ4n_f7IHq";
+
+    const EMAILJS_SERVICE_ID =
+        "service_1t2sejo";
+
+    const EMAILJS_TEMPLATE_ID =
+        "template_uwpy087";
 
     if (!contactForm) {
-        console.error("Contact form with id 'contactForm' was not found.");
+
+        console.error(
+            "Contact form with id contactForm was not found."
+        );
+
         return;
+
     }
 
-    contactForm.addEventListener("submit", function (event) {
+    if (typeof emailjs === "undefined") {
 
-        event.preventDefault();
+        console.error(
+            "EmailJS library is not loaded."
+        );
 
-        const submitButton =
-            contactForm.querySelector('button[type="submit"]');
+        showStatus(
+            "The enquiry service is temporarily unavailable. Please try again later.",
+            "error"
+        );
 
-        const phone =
-            phoneInput ? phoneInput.value.trim() : "";
+        return;
 
-        /* Validate phone number before sending */
+    }
 
-        if (!/^[0-9]{10}$/.test(phone)) {
+    emailjs.init({
 
-            const message =
-                "Please enter a valid 10-digit phone number.";
+        publicKey:EMAILJS_PUBLIC_KEY
 
-            if (formStatus) {
+    });
 
-                formStatus.textContent = message;
-                formStatus.className = "form-status error";
+    if (phoneInput) {
 
-            } else {
+        phoneInput.addEventListener(
+            "input",
+            function () {
 
-                alert(message);
+                phoneInput.value =
+                    phoneInput.value
+                    .replace(/[^0-9]/g, "")
+                    .slice(0,10);
+
+            }
+        );
+
+    }
+
+    contactForm.addEventListener(
+        "submit",
+        async function (event) {
+
+            event.preventDefault();
+
+            const submitButton =
+                contactForm.querySelector(
+                    'button[type="submit"]'
+                );
+
+            const phone =
+                phoneInput
+                ? phoneInput.value.trim()
+                : "";
+
+            if (!/^[0-9]{10}$/.test(phone)) {
+
+                showStatus(
+                    "Please enter a valid 10-digit phone number.",
+                    "error"
+                );
+
+                if (phoneInput) {
+
+                    phoneInput.focus();
+
+                }
+
+                return;
 
             }
 
-            if (phoneInput) {
-                phoneInput.focus();
-            }
+            if (!contactForm.checkValidity()) {
 
-            return;
-        }
+                contactForm.reportValidity();
 
-        /* Confirm EmailJS loaded correctly */
-
-        if (typeof emailjs === "undefined") {
-
-            console.error("EmailJS library is not loaded.");
-
-            const message =
-                "The enquiry service is temporarily unavailable. Please try again.";
-
-            if (formStatus) {
-
-                formStatus.textContent = message;
-                formStatus.className = "form-status error";
-
-            } else {
-
-                alert(message);
+                return;
 
             }
-
-            return;
-        }
-
-        /* Disable button while sending */
-
-        if (submitButton) {
-
-            submitButton.disabled = true;
-            submitButton.textContent = "Sending...";
-
-        }
-
-        if (formStatus) {
-
-            formStatus.textContent = "Sending your enquiry...";
-            formStatus.className = "form-status";
-
-        }
-
-        /* Send form through EmailJS */
-
-        emailjs.sendForm(
-            "service_1t2sejo",
-            "template_uwpy087",
-            contactForm
-        )
-
-        .then(function () {
-
-            const message =
-                "Thank you! Your enquiry has been sent successfully.";
-
-            if (formStatus) {
-
-                formStatus.textContent = message;
-                formStatus.className = "form-status success";
-
-            } else {
-
-                alert(message);
-
-            }
-
-            contactForm.reset();
-
-        })
-
-        .catch(function (error) {
-
-            console.error("EmailJS error:", error);
-
-            const message =
-                "Sorry, your enquiry could not be sent. Please try again.";
-
-            if (formStatus) {
-
-                formStatus.textContent = message;
-                formStatus.className = "form-status error";
-
-            } else {
-
-                alert(message);
-
-            }
-
-        })
-
-        .finally(function () {
 
             if (submitButton) {
 
-                submitButton.disabled = false;
-                submitButton.textContent = "Send Enquiry";
+                submitButton.disabled = true;
+
+                submitButton.textContent =
+                    "Sending...";
 
             }
 
-        });
+            showStatus(
+                "Sending your enquiry...",
+                ""
+            );
 
-    });
+            try {
+
+                const response =
+                    await emailjs.sendForm(
+
+                        EMAILJS_SERVICE_ID,
+
+                        EMAILJS_TEMPLATE_ID,
+
+                        contactForm
+
+                    );
+
+                console.log(
+                    "EmailJS success:",
+                    response.status,
+                    response.text
+                );
+
+                showStatus(
+                    "Thank you! Your enquiry has been sent successfully.",
+                    "success"
+                );
+
+                contactForm.reset();
+
+            } catch (error) {
+
+                console.error(
+                    "EmailJS error:",
+                    error
+                );
+
+                showStatus(
+                    "Sorry, your enquiry could not be sent. Please try again.",
+                    "error"
+                );
+
+            } finally {
+
+                if (submitButton) {
+
+                    submitButton.disabled = false;
+
+                    submitButton.textContent =
+                        "Send Enquiry";
+
+                }
+
+            }
+
+        }
+    );
+
+    function showStatus(message,type) {
+
+        if (!formStatus) {
+
+            alert(message);
+
+            return;
+
+        }
+
+        formStatus.textContent = message;
+
+        formStatus.className =
+            "form-status";
+
+        if (type) {
+
+            formStatus.classList.add(type);
+
+        }
+
+    }
 
 });
