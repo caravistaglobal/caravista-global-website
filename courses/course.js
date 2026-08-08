@@ -11,9 +11,50 @@ document.addEventListener("DOMContentLoaded", function () {
     const resultsMessage = document.getElementById("resultsMessage");
     const programmeResults = document.getElementById("programmeResults");
 
+    let courseDatabase = null;
+
 
     /* =====================================================
-       SEARCH FUNCTION
+       LOAD COURSE DATABASE
+       ===================================================== */
+
+    async function loadCourseDatabase() {
+
+        try {
+
+            const response = await fetch("data/courses.json");
+
+            if (!response.ok) {
+                throw new Error(
+                    "Unable to load courses.json. HTTP status: " +
+                    response.status
+                );
+            }
+
+            courseDatabase = await response.json();
+
+            console.log(
+                "CaraVista Course Database loaded successfully:",
+                courseDatabase
+            );
+
+        } catch (error) {
+
+            console.error(
+                "Course database loading failed:",
+                error
+            );
+
+        }
+
+    }
+
+
+    loadCourseDatabase();
+
+
+    /* =====================================================
+       COURSE SEARCH
        ===================================================== */
 
     if (searchInput) {
@@ -42,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (isMatch) {
 
                     card.classList.remove("hidden");
-
                     visibleCount++;
 
                 } else {
@@ -69,27 +109,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =====================================================
-       COURSE BUTTON CLICK
+       COURSE BUTTONS
        ===================================================== */
 
     courseButtons.forEach(function (button) {
 
         button.addEventListener("click", function () {
 
-            const category =
+            const categoryName =
                 button.getAttribute("data-category");
 
-            if (!category) {
-
-                console.error(
-                    "Course category missing on button."
-                );
-
+            if (!categoryName) {
                 return;
-
             }
 
-            showCourseResults(category);
+            showCourseResults(categoryName);
 
         });
 
@@ -97,76 +131,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =====================================================
-       SHOW RESULTS PLACEHOLDER
+       SHOW COURSE RESULTS
        ===================================================== */
 
-    function showCourseResults(category) {
+    function showCourseResults(categoryName) {
 
-        if (!resultsTitle) {
+        if (!courseDatabase) {
 
-            console.error(
-                "resultsTitle element not found."
-            );
-
+            showLoadingMessage(categoryName);
             return;
 
         }
 
-        if (!resultsMessage) {
 
-            console.error(
-                "resultsMessage element not found."
+        const category =
+            courseDatabase.categories.find(
+                function (item) {
+                    return item.name === categoryName;
+                }
             );
 
-            return;
 
-        }
+        if (!category) {
 
-        if (!programmeResults) {
-
-            console.error(
-                "programmeResults element not found."
-            );
-
+            showNoDataMessage(categoryName);
             return;
 
         }
 
 
         resultsTitle.textContent =
-            category + " in Ireland";
+            category.name + " in Ireland";
 
 
         resultsMessage.textContent =
-            "University and programme options for " +
-            category +
-            " will appear here once the CaraVista course database is connected.";
+            category.programme_count +
+            " programme options across " +
+            category.university_count +
+            " universities in the CaraVista database.";
 
 
-        programmeResults.innerHTML = `
-            <div class="data-coming-soon">
-
-                <div class="data-coming-soon-icon">
-                    <i class="fa-solid fa-database"></i>
-                </div>
-
-                <h3>
-                    Programme Data Integration in Progress
-                </h3>
-
-                <p>
-                    We are preparing programme and university
-                    options for
-                    <strong>${escapeHtml(category)}</strong>.
-                </p>
-
-                <p class="data-note">
-                    This section will shortly be connected to
-                    the Excel-derived CaraVista course database.
-                </p>
-
-            </div>
-        `;
+        renderUniversityGroups(category);
 
 
         if (resultsSection) {
@@ -186,17 +191,225 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =====================================================
-       SAFE TEXT
+       GROUP PROGRAMMES BY UNIVERSITY
+       ===================================================== */
+
+    function renderUniversityGroups(category) {
+
+        const universityGroups = {};
+
+
+        category.programmes.forEach(function (programme) {
+
+            const university =
+                programme.university ||
+                "University not specified";
+
+
+            if (!universityGroups[university]) {
+
+                universityGroups[university] = [];
+
+            }
+
+
+            universityGroups[university].push(
+                programme
+            );
+
+        });
+
+
+        const universities =
+            Object.keys(universityGroups)
+                .sort(function (a, b) {
+                    return a.localeCompare(b);
+                });
+
+
+        if (universities.length === 0) {
+
+            programmeResults.innerHTML = `
+                <p class="empty-results">
+                    No programme information is currently available.
+                </p>
+            `;
+
+            return;
+
+        }
+
+
+        programmeResults.innerHTML =
+            universities.map(function (university) {
+
+                const programmes =
+                    universityGroups[university];
+
+
+                const programmeHTML =
+                    programmes.map(function (programme) {
+
+                        const qualification =
+                            programme.qualification
+                                ? `
+                                    <span class="qualification">
+                                        ${escapeHtml(programme.qualification)}
+                                    </span>
+                                  `
+                                : "";
+
+
+                        return `
+                            <li class="programme-item">
+
+                                <div class="programme-name">
+                                    ${escapeHtml(programme.programme)}
+                                </div>
+
+                                ${qualification}
+
+                            </li>
+                        `;
+
+                    }).join("");
+
+
+                return `
+                    <article class="university-result-card">
+
+                        <div class="university-result-header">
+
+                            <div class="university-result-icon">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    ${escapeHtml(university)}
+                                </h3>
+
+                                <p>
+                                    ${programmes.length}
+                                    programme${programmes.length === 1 ? "" : "s"}
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <ul class="programme-list">
+
+                            ${programmeHTML}
+
+                        </ul>
+
+                    </article>
+                `;
+
+            }).join("");
+
+    }
+
+
+    /* =====================================================
+       DATABASE LOADING MESSAGE
+       ===================================================== */
+
+    function showLoadingMessage(categoryName) {
+
+        resultsTitle.textContent =
+            categoryName + " in Ireland";
+
+
+        resultsMessage.textContent =
+            "Loading programme and university options...";
+
+
+        programmeResults.innerHTML = `
+            <div class="data-coming-soon">
+
+                <div class="data-coming-soon-icon">
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                </div>
+
+                <p>
+                    Loading CaraVista programme database...
+                </p>
+
+            </div>
+        `;
+
+
+        if (resultsSection) {
+
+            resultsSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+    }
+
+
+    /* =====================================================
+       CATEGORY NOT FOUND
+       ===================================================== */
+
+    function showNoDataMessage(categoryName) {
+
+        resultsTitle.textContent =
+            categoryName + " in Ireland";
+
+
+        resultsMessage.textContent =
+            "Programme information for this category is not currently available.";
+
+
+        programmeResults.innerHTML = `
+            <div class="data-coming-soon">
+
+                <div class="data-coming-soon-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <p>
+                    Please contact CaraVista for personalised
+                    course guidance.
+                </p>
+
+            </div>
+        `;
+
+
+        if (resultsSection) {
+
+            resultsSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+    }
+
+
+    /* =====================================================
+       SAFE HTML OUTPUT
        ===================================================== */
 
     function escapeHtml(text) {
 
-        const temp =
+        const element =
             document.createElement("div");
 
-        temp.textContent = text;
+        element.textContent =
+            String(text || "");
 
-        return temp.innerHTML;
+        return element.innerHTML;
 
     }
 
