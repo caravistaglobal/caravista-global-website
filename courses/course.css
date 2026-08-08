@@ -923,3 +923,120 @@ input {
 .course-card.hidden {
     display: none;
 }
+/* =========================================================
+   UNIVERSITY PROGRAMME RESULTS
+   ========================================================= */
+
+.programme-results {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.university-result-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+
+.university-result-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.university-result-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(7, 135, 92, 0.10);
+    color: var(--green);
+
+    font-size: 20px;
+}
+
+.university-result-header h3 {
+    color: var(--primary);
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.university-result-header p {
+    color: var(--text-light);
+    font-size: 12px;
+}
+
+.programme-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+.programme-item {
+    padding: 12px 14px;
+
+    background: var(--background);
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.programme-name {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.qualification {
+    flex-shrink: 0;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    background: rgba(11, 47, 107, 0.08);
+
+    color: var(--primary);
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.empty-results {
+    text-align: center;
+    color: var(--text-light);
+}
+
+
+/* Mobile results */
+
+@media (max-width: 600px) {
+
+    .university-result-card {
+        padding: 18px;
+    }
+
+    .programme-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
