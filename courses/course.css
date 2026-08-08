@@ -1238,7 +1238,7 @@ input {
     box-shadow: var(--shadow);
 
     grid-template-columns:
-        1fr 1fr auto;
+        1fr auto;
 
     align-items: end;
 
