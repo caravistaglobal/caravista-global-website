@@ -1,0 +1,3628 @@
+{
+  "source": "CaraVista University Courses in Ireland workbook",
+  "version": "1.0",
+  "categories": [
+    {
+      "order": 1,
+      "slug": "computer-science",
+      "name": "Computer Science",
+      "description": "Software, computing and advanced technology programmes.",
+      "mapped_categories": [
+        "Computer Science & Software"
+      ],
+      "programme_count": 39,
+      "university_count": 13,
+      "universities": [
+        "Atlantic Technological University",
+        "DUBLIN BUSINESS SCHOOL",
+        "Dublin City University",
+        "Dundalk Institute of Technology",
+        "Griffith College",
+        "Maynooth University",
+        "Munster Technological University",
+        "South East Technological University",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "Trinity College Dublin",
+        "University College Cork",
+        "University of Limerick"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0288",
+          "university": "Atlantic Technological University",
+          "programme": "Blockchain Technologies and Applications (MSc)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0289",
+          "university": "Atlantic Technological University",
+          "programme": "Computing (MSc)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0292",
+          "university": "Atlantic Technological University",
+          "programme": "Computing in Cloud Technologies (MSc)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0293",
+          "university": "Atlantic Technological University",
+          "programme": "Computing in Cyberpsychology (MSc)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0295",
+          "university": "Atlantic Technological University",
+          "programme": "Computing in DevOps (MSc)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0029",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) Information Systems with Computing",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0075",
+          "university": "Dublin City University",
+          "programme": "Computing (with Major Options)",
+          "category": "Computer Science & Software",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0077",
+          "university": "Dublin City University",
+          "programme": "Data Protection and Privacy: Law and Computing",
+          "category": "Computer Science & Software",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0095",
+          "university": "Dublin City University",
+          "programme": "Engineering and Computing",
+          "category": "Computer Science & Software",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0330",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc in Computing",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0331",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc in Computing in Computer Animation",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0332",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc in Computing in Games and Extended Reality",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0333",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc in Computing in Medical Device Software Engineering",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0160",
+          "university": "Griffith College",
+          "programme": "Computing Higher Diploma in Science",
+          "category": "Computer Science & Software",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0162",
+          "university": "Griffith College",
+          "programme": "Computing MSc",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0161",
+          "university": "Griffith College",
+          "programme": "Computing Postgraduate Diploma",
+          "category": "Computer Science & Software",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0215",
+          "university": "Griffith College",
+          "programme": "Software Skills for Trust and Safety Professionals Certificate",
+          "category": "Computer Science & Software",
+          "qualification": "Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0362",
+          "university": "Maynooth University",
+          "programme": "HIGHER DIPLOMA IN SCIENCE (COMPUTER SCIENCE)",
+          "category": "Computer Science & Software",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0363",
+          "university": "Maynooth University",
+          "programme": "HIGHER DIPLOMA IN SCIENCE (SOFTWARE DEVELOPMENT)",
+          "category": "Computer Science & Software",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0407",
+          "university": "Maynooth University",
+          "programme": "MSc COMPUTER SCIENCE (APPLIED)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0408",
+          "university": "Maynooth University",
+          "programme": "MSc COMPUTER SCIENCE (SOFTWARE ENGINEERING)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0417",
+          "university": "Maynooth University",
+          "programme": "MSc SOUND AND MUSIC COMPUTING",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0424",
+          "university": "Maynooth University",
+          "programme": "PG DIPLOMA IN SOUND AND MUSIC COMPUTING",
+          "category": "Computer Science & Software",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0459",
+          "university": "Munster Technological University",
+          "programme": "MSc in Applied Computing",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0484",
+          "university": "Munster Technological University",
+          "programme": "Postgraduate Diploma in Science in Software Development",
+          "category": "Computer Science & Software",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0578",
+          "university": "South East Technological University",
+          "programme": "MSc in Applied Computing",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0583",
+          "university": "South East Technological University",
+          "programme": "MSc in Software Development",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0640",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Software Engineering",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0648",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Web Technologies",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0656",
+          "university": "Technology University of Shannon",
+          "programme": "Agile Software Design – Higher Diploma",
+          "category": "Computer Science & Software",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0661",
+          "university": "Technology University of Shannon",
+          "programme": "Applied Software Engineering – MSc",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0703",
+          "university": "Technology University of Shannon",
+          "programme": "Software Design with Digitalisation – Postgraduate Diploma",
+          "category": "Computer Science & Software",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0705",
+          "university": "Technology University of Shannon",
+          "programme": "Software Engineering (Part-Time) – MSc",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0704",
+          "university": "Technology University of Shannon",
+          "programme": "Software Engineering – MSc",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0748",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Computer Science",
+          "category": "Computer Science & Software",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0771",
+          "university": "University College Cork",
+          "programme": "Applied Computing Technology - HDip",
+          "category": "Computer Science & Software",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0785",
+          "university": "University College Cork",
+          "programme": "Computing Science - MSc",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0062",
+          "university": "University of Limerick",
+          "programme": "Software Development: International Systems (MSc)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0063",
+          "university": "University of Limerick",
+          "programme": "Software Engineering (MSc)",
+          "category": "Computer Science & Software",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "slug": "artificial-intelligence",
+      "name": "Artificial Intelligence",
+      "description": "AI, machine learning and intelligent systems programmes.",
+      "mapped_categories": [
+        "Artificial Intelligence & Machine Learning"
+      ],
+      "programme_count": 21,
+      "university_count": 13,
+      "universities": [
+        "Atlantic Technological University",
+        "DUBLIN BUSINESS SCHOOL",
+        "Dublin City University",
+        "Munster Technological University",
+        "National College of Ireland",
+        "South East Technological University",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "Trinity College Dublin",
+        "University College Cork",
+        "University College Dublin",
+        "University Of Galway",
+        "University of Limerick"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0291",
+          "university": "Atlantic Technological University",
+          "programme": "Computing in Big Data Analytics and Artificial Intelligence (MSc)",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0033",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc.) in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0115",
+          "university": "Dublin City University",
+          "programme": "Law, Data and Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0460",
+          "university": "Munster Technological University",
+          "programme": "MSc in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0524",
+          "university": "National College of Ireland",
+          "programme": "MSc in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0525",
+          "university": "National College of Ireland",
+          "programme": "MSc in Artificial Intelligence for Business",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0533",
+          "university": "National College of Ireland",
+          "programme": "Postgraduate Diploma in Science in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0590",
+          "university": "South East Technological University",
+          "programme": "MSc in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0605",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0664",
+          "university": "Technology University of Shannon",
+          "programme": "Artificial Intelligence for Business – MSc",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0700",
+          "university": "Technology University of Shannon",
+          "programme": "Software Design with Artificial Intelligence – MSc",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0750",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0859",
+          "university": "University College Cork",
+          "programme": "Mathematical Modelling and Machine Learning - MSc",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0235",
+          "university": "University College Dublin",
+          "programme": "MSc in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0236",
+          "university": "University College Dublin",
+          "programme": "MSc in Artificial Intelligence for Business",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0244",
+          "university": "University College Dublin",
+          "programme": "Postgraduate Diploma in Science in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0916",
+          "university": "University Of Galway",
+          "programme": "Artificial Intelligence for Professionals (PgCert)",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "Postgraduate Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0947",
+          "university": "University Of Galway",
+          "programme": "Computer Science—Artificial Intelligence (MSc)",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0044",
+          "university": "University of Limerick",
+          "programme": "Artificial Intelligence and Machine Learning - MSc",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0049",
+          "university": "University of Limerick",
+          "programme": "Computer Vision and Artificial Intelligence - MEng",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MEng",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0056",
+          "university": "University of Limerick",
+          "programme": "Master of Science in Artificial Intelligence",
+          "category": "Artificial Intelligence & Machine Learning",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "slug": "data-science",
+      "name": "Data Science",
+      "description": "Data science, analytics and data-driven technologies.",
+      "mapped_categories": [
+        "Data Science & Analytics"
+      ],
+      "programme_count": 36,
+      "university_count": 15,
+      "universities": [
+        "Atlantic Technological University",
+        "DUBLIN BUSINESS SCHOOL",
+        "Dundalk Institute of Technology",
+        "Griffith College",
+        "Maynooth University",
+        "Munster Technological University",
+        "National College of Ireland",
+        "South East Technological University",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "Trinity College Dublin",
+        "University College Cork",
+        "University College Dublin",
+        "University Of Galway",
+        "University of Limerick"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0290",
+          "university": "Atlantic Technological University",
+          "programme": "Computing in Big Data Analytics (MSc)",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0296",
+          "university": "Atlantic Technological University",
+          "programme": "Data Science (MSc)",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0006",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Higher Diploma in Science in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0024",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0318",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Higher Diploma in Science in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0326",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MBS in Strategic Data Analytics for Business",
+          "category": "Data Science & Analytics",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0334",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0341",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Postgraduate Diploma in Applied Data Science",
+          "category": "Data Science & Analytics",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0346",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Postgraduate Diploma in Science in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0349",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Postgraduate Diploma in Strategic Data Analytics for Business",
+          "category": "Data Science & Analytics",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0155",
+          "university": "Griffith College",
+          "programme": "Big Data Management and Analytics MSc",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0154",
+          "university": "Griffith College",
+          "programme": "Big Data Management and Analytics Postgraduate Diploma",
+          "category": "Data Science & Analytics",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0355",
+          "university": "Maynooth University",
+          "programme": "HIGHER DIPLOMA IN DATA ANALYTICS",
+          "category": "Data Science & Analytics",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0409",
+          "university": "Maynooth University",
+          "programme": "MSc DATA SCIENCE AND ANALYTICS",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0463",
+          "university": "Munster Technological University",
+          "programme": "MSc in Data Science and Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0482",
+          "university": "Munster Technological University",
+          "programme": "Postgraduate Diploma in Science in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0526",
+          "university": "National College of Ireland",
+          "programme": "MSc in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0541",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0530",
+          "university": "National College of Ireland",
+          "programme": "MSc in Open Data Practice",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0559",
+          "university": "South East Technological University",
+          "programme": "MSc in Data Science",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0612",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0613",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Data Science",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0670",
+          "university": "Technology University of Shannon",
+          "programme": "Data Analytics (Athlone) – MSc",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0671",
+          "university": "Technology University of Shannon",
+          "programme": "Data Analytics (Moylish) – MSc",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0672",
+          "university": "Technology University of Shannon",
+          "programme": "Data Analytics (Part-Time, Athlone) – MSc",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0749",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Data Science",
+          "category": "Data Science & Analytics",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0788",
+          "university": "University College Cork",
+          "programme": "Data Science and Analytics - MSc",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0237",
+          "university": "University College Dublin",
+          "programme": "MSc in Data Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0252",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Analytics",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0241",
+          "university": "University College Dublin",
+          "programme": "MSc in Open Data Practice",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0912",
+          "university": "University Of Galway",
+          "programme": "Applied Clinical Data Analytics (MSc)",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0948",
+          "university": "University Of Galway",
+          "programme": "Computer Science—Data Analytics (MSc)",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0957",
+          "university": "University Of Galway",
+          "programme": "Data Analytics and Visualisation (PDip)",
+          "category": "Data Science & Analytics",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0982",
+          "university": "University Of Galway",
+          "programme": "Genomics Data Science (MSc)",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0987",
+          "university": "University Of Galway",
+          "programme": "Health Data Science (MSc)",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0051",
+          "university": "University of Limerick",
+          "programme": "Data Science and Statistical Learning - MSc",
+          "category": "Data Science & Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "slug": "cyber-security",
+      "name": "Cyber Security",
+      "description": "Cybersecurity, information security and network protection programmes.",
+      "mapped_categories": [
+        "Cyber Security"
+      ],
+      "programme_count": 17,
+      "university_count": 10,
+      "universities": [
+        "Atlantic Technological University",
+        "DUBLIN BUSINESS SCHOOL",
+        "Griffith College",
+        "Munster Technological University",
+        "National College of Ireland",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "University College Dublin",
+        "University Of Galway",
+        "University of Limerick"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0294",
+          "university": "Atlantic Technological University",
+          "programme": "Computing in Cybersecurity (MSc)",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0034",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc.) in Cybersecurity",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0200",
+          "university": "Griffith College",
+          "programme": "Network and Information Security MSc",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0201",
+          "university": "Griffith College",
+          "programme": "Network and Information Security Postgraduate Diploma",
+          "category": "Cyber Security",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0462",
+          "university": "Munster Technological University",
+          "programme": "MSc in Cybersecurity",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0483",
+          "university": "Munster Technological University",
+          "programme": "Postgraduate Diploma in Science in Information Security",
+          "category": "Cyber Security",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0528",
+          "university": "National College of Ireland",
+          "programme": "MSc in Cybersecurity",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0611",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Cybersecurity",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0658",
+          "university": "Technology University of Shannon",
+          "programme": "Applied Computer Network Security (Cyber Security) – Postgrad Diploma",
+          "category": "Cyber Security",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0659",
+          "university": "Technology University of Shannon",
+          "programme": "Applied Computer Networks (Cyber Security) – Postgrad Cert",
+          "category": "Cyber Security",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0660",
+          "university": "Technology University of Shannon",
+          "programme": "Applied Computer Networks and Security (Cyber Security) – MSc",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0702",
+          "university": "Technology University of Shannon",
+          "programme": "Software Design with Cybersecurity – MSc",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0239",
+          "university": "University College Dublin",
+          "programme": "MSc in Cybersecurity",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0946",
+          "university": "University Of Galway",
+          "programme": "Computer Science—Adaptive Cybersecurity (MSc)",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0955",
+          "university": "University Of Galway",
+          "programme": "Cybersecurity and Software Development (PDip)",
+          "category": "Cyber Security",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0956",
+          "university": "University Of Galway",
+          "programme": "Cybersecurity Risk Management (MSc)",
+          "category": "Cyber Security",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0050",
+          "university": "University of Limerick",
+          "programme": "Cyber Security - MEng",
+          "category": "Cyber Security",
+          "qualification": "MEng",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "slug": "business-analytics",
+      "name": "Business Analytics",
+      "description": "Business decision-making supported by analytics and data.",
+      "mapped_categories": [
+        "Business Analytics"
+      ],
+      "programme_count": 10,
+      "university_count": 9,
+      "universities": [
+        "DUBLIN BUSINESS SCHOOL",
+        "Maynooth University",
+        "Munster Technological University",
+        "National College of Ireland",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "University College Cork",
+        "University College Dublin",
+        "University Of Galway"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0023",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) in Business Analytics",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0404",
+          "university": "Maynooth University",
+          "programme": "MSc BUSINESS ANALYTICS",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0502",
+          "university": "Munster Technological University",
+          "programme": "MSc in Business Analytics",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0510",
+          "university": "Munster Technological University",
+          "programme": "MSc in Business Intelligence",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0523",
+          "university": "National College of Ireland",
+          "programme": "MSc in Business Analytics for Decision Makers",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0606",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Business Analytics",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0668",
+          "university": "Technology University of Shannon",
+          "programme": "Business Analytics – MSc",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0779",
+          "university": "University College Cork",
+          "programme": "Business Analytics - MSc",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0234",
+          "university": "University College Dublin",
+          "programme": "MSc in Business Analytics for Decision Makers",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0926",
+          "university": "University Of Galway",
+          "programme": "Business Analytics (MSc)",
+          "category": "Business Analytics",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "slug": "finance",
+      "name": "Finance",
+      "description": "Finance, investment, banking and fintech pathways.",
+      "mapped_categories": [
+        "Finance & FinTech"
+      ],
+      "programme_count": 34,
+      "university_count": 11,
+      "universities": [
+        "DUBLIN BUSINESS SCHOOL",
+        "Dublin City University",
+        "Griffith College",
+        "Maynooth University",
+        "Munster Technological University",
+        "National College of Ireland",
+        "South East Technological University",
+        "Technological University Dublin",
+        "University College Cork",
+        "University College Dublin",
+        "University Of Galway"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0005",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Higher Diploma in Science in Aviation Finance",
+          "category": "Finance & FinTech",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0008",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Higher Diploma in Science in Financial Technology",
+          "category": "Finance & FinTech",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0017",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Business Administration (MBA) in Finance",
+          "category": "Finance & FinTech",
+          "qualification": "MBA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0026",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) in Financial Technology",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0027",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) in Trading and Investing",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0030",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) International Accounting & Finance",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0035",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc.) in Financial Analytics",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0099",
+          "university": "Dublin City University",
+          "programme": "Finance",
+          "category": "Finance & FinTech",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0100",
+          "university": "Dublin City University",
+          "programme": "Financial Mathematics",
+          "category": "Finance & FinTech",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0113",
+          "university": "Dublin City University",
+          "programme": "Investment, Treasury & Banking",
+          "category": "Finance & FinTech",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0146",
+          "university": "Griffith College",
+          "programme": "Accounting & Finance Management MSc",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0147",
+          "university": "Griffith College",
+          "programme": "Accounting and Finance Management Postgraduate Diploma",
+          "category": "Finance & FinTech",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0353",
+          "university": "Maynooth University",
+          "programme": "HIGHER DIPLOMA IN ARTS (FINANCE)",
+          "category": "Finance & FinTech",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0411",
+          "university": "Maynooth University",
+          "programme": "MSc FINANCE",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0421",
+          "university": "Maynooth University",
+          "programme": "MSc SUSTAINABLE FINANCIAL TECHNOLOGY AND INNOVATION (TOP UP MASTERS)",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0443",
+          "university": "Maynooth University",
+          "programme": "POSTGRADUATE DIPLOMA IN SUSTAINABLE FINANCIAL TECHNOLOGY & INNOVATION",
+          "category": "Finance & FinTech",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0494",
+          "university": "Munster Technological University",
+          "programme": "MSc in Finance",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0520",
+          "university": "National College of Ireland",
+          "programme": "MSc in Finance",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0529",
+          "university": "National College of Ireland",
+          "programme": "MSc in Fintech",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0569",
+          "university": "South East Technological University",
+          "programme": "MSc in Finance",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0618",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Finance",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0619",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Financial Technology (FinTech)",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0628",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Law and Finance",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0637",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Property Economics",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0805",
+          "university": "University College Cork",
+          "programme": "Finance (Banking and Risk Management) - MSc",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0806",
+          "university": "University College Cork",
+          "programme": "Finance (Corporate Finance) - MSc",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0807",
+          "university": "University College Cork",
+          "programme": "Finance (Investment and Asset Management) - MSc",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0808",
+          "university": "University College Cork",
+          "programme": "Financial and Computational Mathematics - MSc",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0231",
+          "university": "University College Dublin",
+          "programme": "MSc in Finance",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0240",
+          "university": "University College Dublin",
+          "programme": "MSc in Fintech",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0953",
+          "university": "University Of Galway",
+          "programme": "Corporate Finance (MSc)",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0977",
+          "university": "University Of Galway",
+          "programme": "Financial Analysis (HDip)",
+          "category": "Finance & FinTech",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0980",
+          "university": "University Of Galway",
+          "programme": "Fintech [Economics and Financial Technology] (MSc)",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0995",
+          "university": "University Of Galway",
+          "programme": "Hospitality Performance, Revenue and Asset Management (MSc)",
+          "category": "Finance & FinTech",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "slug": "business-management",
+      "name": "Business & Management",
+      "description": "Management, MBA, leadership and strategy programmes.",
+      "mapped_categories": [
+        "Business & Management"
+      ],
+      "programme_count": 87,
+      "university_count": 15,
+      "universities": [
+        "Atlantic Technological University",
+        "DUBLIN BUSINESS SCHOOL",
+        "Dublin City University",
+        "Dundalk Institute of Technology",
+        "Griffith College",
+        "Maynooth University",
+        "Munster Technological University",
+        "National College of Ireland",
+        "South East Technological University",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "University College Cork",
+        "University College Dublin",
+        "University Of Galway",
+        "University of Limerick"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0267",
+          "university": "Atlantic Technological University",
+          "programme": "Business Management (MSc)",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0285",
+          "university": "Atlantic Technological University",
+          "programme": "Engineering Management (MSc)",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0284",
+          "university": "Atlantic Technological University",
+          "programme": "International Healthcare Management (MHS)",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0002",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Higher Diploma in Business",
+          "category": "Business & Management",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0015",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Business Administration (MBA)",
+          "category": "Business & Management",
+          "qualification": "MBA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0028",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) Information & Library Management (LAI accredited)",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0031",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) Management Practice",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0084",
+          "university": "Dublin City University",
+          "programme": "Education and Training Management (eLearning)",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0085",
+          "university": "Dublin City University",
+          "programme": "Education and Training Management (Leadership)",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0093",
+          "university": "Dublin City University",
+          "programme": "Emergency Management",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0101",
+          "university": "Dublin City University",
+          "programme": "Global Management (Digital Disruption)",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0118",
+          "university": "Dublin City University",
+          "programme": "Management (Aviation Leadership)",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0119",
+          "university": "Dublin City University",
+          "programme": "Management (Business)",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0120",
+          "university": "Dublin City University",
+          "programme": "Management of Clean Technologies (MCT)",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0121",
+          "university": "Dublin City University",
+          "programme": "Management of Operations (MOPS)",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0122",
+          "university": "Dublin City University",
+          "programme": "Management of Strategy",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0123",
+          "university": "Dublin City University",
+          "programme": "MBA",
+          "category": "Business & Management",
+          "qualification": "MBA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0140",
+          "university": "Dublin City University",
+          "programme": "Talent, Leadership & HR Strategy",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0303",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Certificate in Clinical Governance, Leadership and Evidence Based Veterinary Care",
+          "category": "Business & Management",
+          "qualification": "Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0314",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Certificate in Professional Practice: Professional Management of Complex Behaviour in Clinical Practice",
+          "category": "Business & Management",
+          "qualification": "Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0322",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MA in Tourism and Heritage Management",
+          "category": "Business & Management",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0335",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc in Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0337",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc in Professional Practice: Professional Management of Complex Behaviour in Clinical Practice",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0345",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Postgraduate Diploma in Professional Practice: Professional Management of Complex Behaviour in Clinical Practice",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0156",
+          "university": "Griffith College",
+          "programme": "Business Administration Postgraduate Certificate",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0167",
+          "university": "Griffith College",
+          "programme": "Customer Relationship Management Postgraduate Certificate",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0173",
+          "university": "Griffith College",
+          "programme": "Edinburgh Business School Heriot Watt MBA",
+          "category": "Business & Management",
+          "qualification": "MBA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0177",
+          "university": "Griffith College",
+          "programme": "Global Brand Management MSc",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0178",
+          "university": "Griffith College",
+          "programme": "Global Brand Management Postgraduate Diploma",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0207",
+          "university": "Griffith College",
+          "programme": "Pharmaceutical Business Management Certificate",
+          "category": "Business & Management",
+          "qualification": "Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0205",
+          "university": "Griffith College",
+          "programme": "Pharmaceutical Business Management MSc",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0206",
+          "university": "Griffith College",
+          "programme": "Pharmaceutical Business Management Postgraduate Diploma",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0217",
+          "university": "Griffith College",
+          "programme": "Sustainable Tourism and Hospitality Management MSc",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0218",
+          "university": "Griffith College",
+          "programme": "Trust, Safety and Content Moderation Management Postgraduate Diploma",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0219",
+          "university": "Griffith College",
+          "programme": "Work Related Leadership, Teamwork and Change Management Postgraduate Certificate",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0358",
+          "university": "Maynooth University",
+          "programme": "HIGHER DIPLOMA IN LEADERSHIP, DEFENCE AND CONTEMPORARY SECURITY",
+          "category": "Business & Management",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0388",
+          "university": "Maynooth University",
+          "programme": "MA LEADERSHIP, MANAGEMENT & DEFENCE STUDIES",
+          "category": "Business & Management",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0401",
+          "university": "Maynooth University",
+          "programme": "MASTER OF EDUCATIONAL LEADERSHIP AND MANAGEMENT",
+          "category": "Business & Management",
+          "qualification": "Master",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0402",
+          "university": "Maynooth University",
+          "programme": "MASTER OF SCIENCE BUSINESS",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0405",
+          "university": "Maynooth University",
+          "programme": "MSc BUSINESS MANAGEMENT",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0426",
+          "university": "Maynooth University",
+          "programme": "PG DIP IN EDUCATIONAL LEADERSHIP AND MANAGEMENT (FUTURE LEADERS PROGRAMME)",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0508",
+          "university": "Munster Technological University",
+          "programme": "MA in Educational Leadership",
+          "category": "Business & Management",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0489",
+          "university": "Munster Technological University",
+          "programme": "MSc in Business Administration",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0465",
+          "university": "Munster Technological University",
+          "programme": "MSc in Energy Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0505",
+          "university": "Munster Technological University",
+          "programme": "MSc in Engineering Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0512",
+          "university": "Munster Technological University",
+          "programme": "MSc in Event Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0514",
+          "university": "Munster Technological University",
+          "programme": "MSc in Leadership",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0497",
+          "university": "Munster Technological University",
+          "programme": "MSc in Sports Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0511",
+          "university": "Munster Technological University",
+          "programme": "MSc in Strategic Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0472",
+          "university": "Munster Technological University",
+          "programme": "MSc in Tourism Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0479",
+          "university": "Munster Technological University",
+          "programme": "Postgraduate Diploma in Business in Sales Management",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0485",
+          "university": "Munster Technological University",
+          "programme": "Postgraduate Diploma in Social Care Management",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0539",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Leadership",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0516",
+          "university": "National College of Ireland",
+          "programme": "MSc in Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0580",
+          "university": "South East Technological University",
+          "programme": "MA in Educational Leadership",
+          "category": "Business & Management",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0562",
+          "university": "South East Technological University",
+          "programme": "MSc in Analytical Science with Quality Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0565",
+          "university": "South East Technological University",
+          "programme": "MSc in Business",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0575",
+          "university": "South East Technological University",
+          "programme": "MSc in Environmental Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0570",
+          "university": "South East Technological University",
+          "programme": "MSc in Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0577",
+          "university": "South East Technological University",
+          "programme": "MSc in Real Estate",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0602",
+          "university": "South East Technological University",
+          "programme": "MSc in Water Resource Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0608",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Business Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0616",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Engineering Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0625",
+          "university": "Technological University Dublin",
+          "programme": "MSc in International Hospitality Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0629",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0641",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Sports Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0645",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Technology Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0669",
+          "university": "Technology University of Shannon",
+          "programme": "Business Management – HDip",
+          "category": "Business & Management",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0666",
+          "university": "Technology University of Shannon",
+          "programme": "Business – Higher Diploma",
+          "category": "Business & Management",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0667",
+          "university": "Technology University of Shannon",
+          "programme": "Business – MBus",
+          "category": "Business & Management",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0687",
+          "university": "Technology University of Shannon",
+          "programme": "Leadership in Workplace Health and Wellbeing – MA",
+          "category": "Business & Management",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0686",
+          "university": "Technology University of Shannon",
+          "programme": "Leadership – MSc",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0690",
+          "university": "Technology University of Shannon",
+          "programme": "Nursing in Leadership and Quality Healthcare – MSc",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0691",
+          "university": "Technology University of Shannon",
+          "programme": "Nursing in Leadership and Quality Healthcare – MSc (Part-Time)",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0692",
+          "university": "Technology University of Shannon",
+          "programme": "Nursing in Leadership and Quality Healthcare – Postgraduate Certificate",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0693",
+          "university": "Technology University of Shannon",
+          "programme": "Nursing in Leadership and Quality Healthcare – Postgraduate Diploma",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0707",
+          "university": "Technology University of Shannon",
+          "programme": "Sustainable Energy System Management – MSc",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0765",
+          "university": "University College Cork",
+          "programme": "Applied Coastal and Marine Management - MSc",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0774",
+          "university": "University College Cork",
+          "programme": "Arts Management and Creative Producing - MA",
+          "category": "Business & Management",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0829",
+          "university": "University College Cork",
+          "programme": "Industrial Pharmaceutical Sciences, Operation and Management - MSc",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0250",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Leadership",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0227",
+          "university": "University College Dublin",
+          "programme": "MSc in Management",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0971",
+          "university": "University Of Galway",
+          "programme": "Environmental Leadership (MSc)",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0985",
+          "university": "University Of Galway",
+          "programme": "Global Hospitality Management and Intercultural Communication (MSc)",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0993",
+          "university": "University Of Galway",
+          "programme": "Hospitality and Leadership (PgCert)",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0994",
+          "university": "University Of Galway",
+          "programme": "Hospitality Management (PgCert)",
+          "category": "Business & Management",
+          "qualification": "Postgraduate Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0064",
+          "university": "University of Limerick",
+          "programme": "Sustainable Resource Management: Policy and Practice (MSc)",
+          "category": "Business & Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "slug": "digital-marketing",
+      "name": "Digital Marketing",
+      "description": "Marketing, digital strategy, content and communication programmes.",
+      "mapped_categories": [
+        "Marketing & Digital Marketing"
+      ],
+      "programme_count": 56,
+      "university_count": 14,
+      "universities": [
+        "Atlantic Technological University",
+        "DUBLIN BUSINESS SCHOOL",
+        "Dublin City University",
+        "Dundalk Institute of Technology",
+        "Griffith College",
+        "Maynooth University",
+        "Munster Technological University",
+        "National College of Ireland",
+        "South East Technological University",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "University College Cork",
+        "University College Dublin",
+        "University Of Galway"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0268",
+          "university": "Atlantic Technological University",
+          "programme": "Digital Media and Marketing (MSc)",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0270",
+          "university": "Atlantic Technological University",
+          "programme": "Marketing (MSc)",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0007",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Higher Diploma in Science in Digital Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0020",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Business Administration (MBA) in Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MBA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0025",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) in Digital Marketing and Analytics",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0032",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Master of Science (MSc) Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0039",
+          "university": "DUBLIN BUSINESS SCHOOL",
+          "programme": "Msc Digital Marketing - Online",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0080",
+          "university": "Dublin City University",
+          "programme": "Digital Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0131",
+          "university": "Dublin City University",
+          "programme": "Public Relations and Strategic Communications",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0325",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MBS in Entrepreneurship and Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0210",
+          "university": "Griffith College",
+          "programme": "Public Relations and Digital Communications MA",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0211",
+          "university": "Griffith College",
+          "programme": "Public Relations and Digital Communications Postgraduate Diploma",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0410",
+          "university": "Maynooth University",
+          "programme": "MSc DIGITAL MARKETING",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0418",
+          "university": "Maynooth University",
+          "programme": "MSc STRATEGIC MARKETING",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0507",
+          "university": "Munster Technological University",
+          "programme": "MA in Global Communication",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0474",
+          "university": "Munster Technological University",
+          "programme": "MA in Journalism and Digital Content Creation",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0476",
+          "university": "Munster Technological University",
+          "programme": "MA in Public Relations with New Media",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0464",
+          "university": "Munster Technological University",
+          "programme": "MSc in Digital Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0544",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Communication",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0545",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Content",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0534",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0546",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing and Analytics",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0552",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing and Communication",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0553",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing and Content",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0551",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing and Design",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0550",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing and Entrepreneurship",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0548",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing and Innovation",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0549",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing and Leadership",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0547",
+          "university": "National College of Ireland",
+          "programme": "MSc in Digital Marketing and Strategy",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0522",
+          "university": "National College of Ireland",
+          "programme": "MSc in Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0598",
+          "university": "South East Technological University",
+          "programme": "MA in Public Relations",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0571",
+          "university": "South East Technological University",
+          "programme": "MSc in Digital Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0567",
+          "university": "South East Technological University",
+          "programme": "MSc in Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0653",
+          "university": "Technological University Dublin",
+          "programme": "MA in Public Relations",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0614",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Digital Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0626",
+          "university": "Technological University Dublin",
+          "programme": "MSc in International Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0630",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0679",
+          "university": "Technology University of Shannon",
+          "programme": "Digital Marketing & Analytics – MSc",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0678",
+          "university": "Technology University of Shannon",
+          "programme": "Digital Marketing (Online) – Postgraduate Diploma",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0680",
+          "university": "Technology University of Shannon",
+          "programme": "Digital Marketing and Analytics – MSc",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0677",
+          "university": "Technology University of Shannon",
+          "programme": "Digital Marketing – HDip",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0856",
+          "university": "University College Cork",
+          "programme": "Management & Marketing - MSc",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0858",
+          "university": "University College Cork",
+          "programme": "Marketing - MSc",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0255",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Communication",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0256",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Content",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0245",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0257",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Marketing and Analytics",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0263",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Marketing and Communication",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0262",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Marketing and Design",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0261",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Marketing and Entrepreneurship",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0259",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Marketing and Innovation",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0260",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Marketing and Leadership",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0258",
+          "university": "University College Dublin",
+          "programme": "MSc in Digital Marketing and Strategy",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0233",
+          "university": "University College Dublin",
+          "programme": "MSc in Marketing",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0961",
+          "university": "University Of Galway",
+          "programme": "Digital Marketing (MSc)",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0986",
+          "university": "University Of Galway",
+          "programme": "Global Media and Communication (MA)",
+          "category": "Marketing & Digital Marketing",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "slug": "engineering",
+      "name": "Engineering",
+      "description": "Engineering pathways across mechanical, civil, electrical, electronic, biomedical, aeronautical and related fields.",
+      "mapped_categories": [
+        "Aeronautical & Aviation",
+        "Biomedical & Medical Engineering",
+        "Chemical & Process Engineering",
+        "Civil & Structural Engineering",
+        "Electrical, Electronic & Computer Engineering",
+        "Mechanical & Manufacturing Engineering",
+        "General Engineering & Engineering Management"
+      ],
+      "programme_count": 42,
+      "university_count": 12,
+      "universities": [
+        "Atlantic Technological University",
+        "Dublin City University",
+        "Dundalk Institute of Technology",
+        "Griffith College",
+        "Munster Technological University",
+        "South East Technological University",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "Trinity College Dublin",
+        "University College Cork",
+        "University Of Galway",
+        "University of Limerick"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0275",
+          "university": "Atlantic Technological University",
+          "programme": "Biopharmaceutical Manufacturing (MSc)",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0286",
+          "university": "Atlantic Technological University",
+          "programme": "Geotechnical Engineering with Structural Engineering (MEng)",
+          "category": "Civil & Structural Engineering",
+          "qualification": "MEng",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0287",
+          "university": "Atlantic Technological University",
+          "programme": "Structural Engineering with Geotechnical Engineering (MEng)",
+          "category": "Civil & Structural Engineering",
+          "qualification": "MEng",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0068",
+          "university": "Dublin City University",
+          "programme": "Bioprocess Engineering",
+          "category": "Chemical & Process Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0087",
+          "university": "Dublin City University",
+          "programme": "Electronic & Computer Engineering",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0088",
+          "university": "Dublin City University",
+          "programme": "Electronic & Computer Technology",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0089",
+          "university": "Dublin City University",
+          "programme": "Electronic and Computer Engineering",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0090",
+          "university": "Dublin City University",
+          "programme": "Electronic Commerce (Business)",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0124",
+          "university": "Dublin City University",
+          "programme": "Mechanical and Manufacturing Engineering",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0125",
+          "university": "Dublin City University",
+          "programme": "Mechanical and Manufacturing Engineering Programme",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0324",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Master of Engineering (MEng) in Mechanical Engineering",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MEng",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0344",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Postgraduate Diploma in Mechanical Engineering",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0198",
+          "university": "Griffith College",
+          "programme": "Medical Device Technology & Business MSc",
+          "category": "Biomedical & Medical Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0199",
+          "university": "Griffith College",
+          "programme": "Medical Device Technology & Business Postgraduate Diploma",
+          "category": "Biomedical & Medical Engineering",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0498",
+          "university": "Munster Technological University",
+          "programme": "MSc in Advanced Manufacturing",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0509",
+          "university": "Munster Technological University",
+          "programme": "MSc in Integrated Design Engineering",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0467",
+          "university": "Munster Technological University",
+          "programme": "MSc in Mechanical Engineering",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0592",
+          "university": "South East Technological University",
+          "programme": "MSc in Advanced Manufacturing",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0560",
+          "university": "South East Technological University",
+          "programme": "MSc in Innovative Technology Engineering",
+          "category": "General Engineering & Engineering Management",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0585",
+          "university": "South East Technological University",
+          "programme": "MSc in Mechanical Engineering",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0591",
+          "university": "South East Technological University",
+          "programme": "MSc in Robotics",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0631",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Mechanical Engineering",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0632",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Mechatronic Engineering",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0646",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Transport Engineering",
+          "category": "Civil & Structural Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0647",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Urban Planning",
+          "category": "Civil & Structural Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0657",
+          "university": "Technology University of Shannon",
+          "programme": "Aircraft Maintenance Engineering – BSc",
+          "category": "Aeronautical & Aviation",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0747",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Engineering",
+          "category": "General Engineering & Engineering Management",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0751",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Robotics",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0756",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Urban Planning",
+          "category": "Civil & Structural Engineering",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0796",
+          "university": "University College Cork",
+          "programme": "Electrical and Electronic Engineering - MEngSc",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "MEngSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0860",
+          "university": "University College Cork",
+          "programme": "Mechanical Engineering (Manufacturing, Process and Automation Systems) - MEngSc",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MEngSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0931",
+          "university": "University Of Galway",
+          "programme": "Cellular Manufacturing and Therapy (MSc)",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0936",
+          "university": "University Of Galway",
+          "programme": "Civil Engineering (ME)",
+          "category": "Civil & Structural Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0965",
+          "university": "University Of Galway",
+          "programme": "Electrical & Electronic Engineering (ME)",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0966",
+          "university": "University Of Galway",
+          "programme": "Electronic & Computer Engineering (ME)",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0998",
+          "university": "University Of Galway",
+          "programme": "Intelligent Robotics (MSc)",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0041",
+          "university": "University of Limerick",
+          "programme": "Aeronautical Engineering (MSc)",
+          "category": "Aeronautical & Aviation",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0045",
+          "university": "University of Limerick",
+          "programme": "Biomedical Device Materials (MSc)",
+          "category": "Biomedical & Medical Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0047",
+          "university": "University of Limerick",
+          "programme": "Chemical Engineering (Grad Dip)",
+          "category": "Chemical & Process Engineering",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0048",
+          "university": "University of Limerick",
+          "programme": "Civil Engineering (MSc)",
+          "category": "Civil & Structural Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0058",
+          "university": "University of Limerick",
+          "programme": "Mechanical Engineering (MSc)",
+          "category": "Mechanical & Manufacturing Engineering",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0059",
+          "university": "University of Limerick",
+          "programme": "Mechatronics (MEng)",
+          "category": "Electrical, Electronic & Computer Engineering",
+          "qualification": "MEng",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "slug": "biotechnology",
+      "name": "Biotechnology",
+      "description": "Biotechnology, bioprocessing and bio-manufacturing study options.",
+      "mapped_categories": [
+        "Biotechnology & Bioprocessing"
+      ],
+      "programme_count": 17,
+      "university_count": 8,
+      "universities": [
+        "Atlantic Technological University",
+        "Dundalk Institute of Technology",
+        "Munster Technological University",
+        "South East Technological University",
+        "Trinity College Dublin",
+        "University College Cork",
+        "University Of Galway",
+        "University of Limerick"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0274",
+          "university": "Atlantic Technological University",
+          "programme": "Bioinformatics (MSc)",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0276",
+          "university": "Atlantic Technological University",
+          "programme": "Bioprocessing (MSc)",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0301",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Certificate in Animal Biotechnology",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0306",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Certificate in Food and Feed Biotechnology",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0327",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc / Postgraduate Diploma in Agricultural Biotechnology",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0468",
+          "university": "Munster Technological University",
+          "programme": "MSc in Pharmaceutical Biotechnology",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0594",
+          "university": "South East Technological University",
+          "programme": "MSc in Biotechnology",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0743",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Bioinformatics",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0742",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Biotechnology",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0777",
+          "university": "University College Cork",
+          "programme": "Bioinformatics and Computational Biology - MSc",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0778",
+          "university": "University College Cork",
+          "programme": "Biotechnology - MSc",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0828",
+          "university": "University College Cork",
+          "programme": "Industrial Biotechnology and Biomanufacturing - MEngSc",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MEngSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0861",
+          "university": "University College Cork",
+          "programme": "Microbiome Science – MSc",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0923",
+          "university": "University Of Galway",
+          "programme": "Biomedical Genomics (MSc)",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0925",
+          "university": "University Of Galway",
+          "programme": "Biotechnology (MSc)",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0046",
+          "university": "University of Limerick",
+          "programme": "Bioprocessing MSc",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0060",
+          "university": "University of Limerick",
+          "programme": "MSc in Biomolecular Science (online)",
+          "category": "Biotechnology & Bioprocessing",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "slug": "pharmaceutical-sciences",
+      "name": "Pharmaceutical Sciences",
+      "description": "Pharmaceutical science, biopharma and regulatory-focused programmes.",
+      "mapped_categories": [
+        "Pharmaceutical Sciences"
+      ],
+      "programme_count": 12,
+      "university_count": 7,
+      "universities": [
+        "Griffith College",
+        "South East Technological University",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "Trinity College Dublin",
+        "University College Cork",
+        "University Of Galway"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0203",
+          "university": "Griffith College",
+          "programme": "Pharmaceutical Business and Technology MSc",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0204",
+          "university": "Griffith College",
+          "programme": "Pharmaceutical Business and Technology Postgraduate Diploma",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0212",
+          "university": "Griffith College",
+          "programme": "Quality and Regulatory Practice in the Pharmaceutical Industry Special Purpose Award",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0593",
+          "university": "South East Technological University",
+          "programme": "MSc in Pharmaceutical Science",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0635",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Pharmaceutical Science",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0665",
+          "university": "Technology University of Shannon",
+          "programme": "Biopharmaceutical Technology – MSc/Postgrad Diploma",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0694",
+          "university": "Technology University of Shannon",
+          "programme": "Pharmaceutical and Chemical Analysis – MSc/PgD",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0696",
+          "university": "Technology University of Shannon",
+          "programme": "Process Validation and Regulatory Affairs (Pharmaceutical) – MSc",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0739",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Pharmacology",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0760",
+          "university": "University College Cork",
+          "programme": "Analysis of Pharmaceutical Compounds - MSc",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0797",
+          "university": "University College Cork",
+          "programme": "Engineering in Pharmaceutical and Biopharmaceutical Systems - MEngSc",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MEngSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0932",
+          "university": "University Of Galway",
+          "programme": "Cheminformatics and Toxicology (MSc)",
+          "category": "Pharmaceutical Sciences",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "slug": "sustainability",
+      "name": "Sustainability",
+      "description": "Environmental, sustainability, climate and renewable energy programmes.",
+      "mapped_categories": [
+        "Environmental & Sustainability",
+        "Energy & Renewable Energy"
+      ],
+      "programme_count": 41,
+      "university_count": 12,
+      "universities": [
+        "Atlantic Technological University",
+        "Dublin City University",
+        "Dundalk Institute of Technology",
+        "Griffith College",
+        "Maynooth University",
+        "Munster Technological University",
+        "South East Technological University",
+        "Technological University Dublin",
+        "Technology University of Shannon",
+        "Trinity College Dublin",
+        "University College Cork",
+        "University Of Galway"
+      ],
+      "programmes": [
+        {
+          "id": "PRG-0272",
+          "university": "Atlantic Technological University",
+          "programme": "Applied Marine Conservation (MSc)",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0273",
+          "university": "Atlantic Technological University",
+          "programme": "Conservation Behaviour (MSc)",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0074",
+          "university": "Dublin City University",
+          "programme": "Climate Change: Policy, Media and Society",
+          "category": "Environmental & Sustainability",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0338",
+          "university": "Dundalk Institute of Technology",
+          "programme": "MSc in Renewable Energy Systems",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0348",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Postgraduate Diploma in Solar Energy",
+          "category": "Energy & Renewable Energy",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0351",
+          "university": "Dundalk Institute of Technology",
+          "programme": "Postgraduate Diploma in Wind Energy",
+          "category": "Energy & Renewable Energy",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0216",
+          "university": "Griffith College",
+          "programme": "Sustainable Reporting and Transformation Certificate",
+          "category": "Environmental & Sustainability",
+          "qualification": "Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0381",
+          "university": "Maynooth University",
+          "programme": "MA GEOGRAPHY",
+          "category": "Environmental & Sustainability",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0382",
+          "university": "Maynooth University",
+          "programme": "MA GEOGRAPHY: SPATIAL JUSTICE",
+          "category": "Environmental & Sustainability",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0406",
+          "university": "Maynooth University",
+          "programme": "MSc CLIMATE CHANGE",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0420",
+          "university": "Maynooth University",
+          "programme": "MSc SUSTAINABILITY IN ENTERPRISE",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0431",
+          "university": "Maynooth University",
+          "programme": "POSTGRADUATE CERTIFICATE IN SUSTAINABILITY IN ENTERPRISE",
+          "category": "Environmental & Sustainability",
+          "qualification": "Postgraduate Certificate",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0437",
+          "university": "Maynooth University",
+          "programme": "POSTGRADUATE DIPLOMA IN GEOGRAPHY",
+          "category": "Environmental & Sustainability",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0500",
+          "university": "Munster Technological University",
+          "programme": "MSc in Environmental Sustainability",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0503",
+          "university": "Munster Technological University",
+          "programme": "MSc in Renewable Energy",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0471",
+          "university": "Munster Technological University",
+          "programme": "MSc in Sustainable Energy",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0596",
+          "university": "South East Technological University",
+          "programme": "MSc in Environmental Science",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0586",
+          "university": "South East Technological University",
+          "programme": "MSc in Renewable Energy",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0561",
+          "university": "South East Technological University",
+          "programme": "MSc in Sustainable Energy Engineering",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0617",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Environmental Science",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0639",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Renewable Energy",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0643",
+          "university": "Technological University Dublin",
+          "programme": "MSc in Sustainable Development",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0683",
+          "university": "Technology University of Shannon",
+          "programme": "Energy Infrastructure – MEng",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MEng",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0753",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Climate Change",
+          "category": "Environmental & Sustainability",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0730",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Environmental History",
+          "category": "Environmental & Sustainability",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0752",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Environmental Science",
+          "category": "Environmental & Sustainability",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0718",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Geography",
+          "category": "Environmental & Sustainability",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0754",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Renewable Energy",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0755",
+          "university": "Trinity College Dublin",
+          "programme": "M.Phil. in Sustainable Development",
+          "category": "Environmental & Sustainability",
+          "qualification": "MPhil",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0766",
+          "university": "University College Cork",
+          "programme": "Applied Environmental Geoscience - MSc",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0801",
+          "university": "University College Cork",
+          "programme": "Environmental Analytical Chemistry - MSc",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0815",
+          "university": "University College Cork",
+          "programme": "Geography - HDip in Arts",
+          "category": "Environmental & Sustainability",
+          "qualification": "Higher Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0816",
+          "university": "University College Cork",
+          "programme": "Geoinformatics - MSc",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0881",
+          "university": "University College Cork",
+          "programme": "Planning and Sustainable Development - PG Dip",
+          "category": "Environmental & Sustainability",
+          "qualification": "Postgraduate Diploma",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0890",
+          "university": "University College Cork",
+          "programme": "Sociology of Sustainability and Global Challenges - MA",
+          "category": "Environmental & Sustainability",
+          "qualification": "MA",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0894",
+          "university": "University College Cork",
+          "programme": "Sustainable Development, Agri-Food and Co-operatives - MSc",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0895",
+          "university": "University College Cork",
+          "programme": "Sustainable Energy - MEngSc",
+          "category": "Energy & Renewable Energy",
+          "qualification": "MEngSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0910",
+          "university": "University Of Galway",
+          "programme": "AgriFood Sustainability & Technology (MSc)",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0938",
+          "university": "University Of Galway",
+          "programme": "Climate Change, Agriculture and Food Security (MSc)",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0945",
+          "university": "University Of Galway",
+          "programme": "Coastal & Marine Environments: Physical Processes, Policy & Practice (MSc)",
+          "category": "Environmental & Sustainability",
+          "qualification": "MSc",
+          "mapping_status": "Mapped"
+        },
+        {
+          "id": "PRG-0967",
+          "university": "University Of Galway",
+          "programme": "Energy Systems Engineering (ME)",
+          "category": "Energy & Renewable Energy",
+          "qualification": "Not stated in title",
+          "mapping_status": "Mapped"
+        }
+      ]
+    }
+  ]
+}
