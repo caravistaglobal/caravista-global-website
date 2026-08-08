@@ -1407,3 +1407,152 @@ input {
     }
 
 }
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+.mobile-menu-toggle {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: var(--primary);
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+
+    position: sticky;
+    top: 68px;
+    z-index: 999;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow:
+        0 8px 20px rgba(15, 42, 80, 0.08);
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu a {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 20px;
+
+    color: var(--primary);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #edf1f5;
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu a i {
+    width: 22px;
+    color: var(--green);
+}
+
+.mobile-bottom-nav {
+    display: none;
+}
+
+
+/* =========================================================
+   MOBILE NAV BREAKPOINT
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .course-nav {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-inner {
+        justify-content: space-between;
+    }
+
+    .header-cta {
+        display: none;
+    }
+
+    .mobile-bottom-nav {
+        position: fixed;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        z-index: 1200;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        background: #ffffff;
+
+        border-top: 1px solid var(--border);
+
+        box-shadow:
+            0 -8px 20px rgba(15, 42, 80, 0.08);
+    }
+
+    .mobile-bottom-nav a {
+        min-height: 62px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 4px;
+
+        color: var(--primary);
+
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .mobile-bottom-nav a i {
+        font-size: 17px;
+        color: var(--green);
+    }
+
+    .mobile-bottom-nav a:hover,
+    .mobile-bottom-nav a:focus {
+        background: #f7f9fc;
+    }
+
+    body {
+        padding-bottom: 68px;
+    }
+
+}
