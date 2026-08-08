@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* =====================================================
+       ELEMENT REFERENCES
+       ===================================================== */
+
     const searchInput =
         document.getElementById("courseSearch");
 
@@ -27,24 +31,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const universityFilter =
         document.getElementById("universityFilter");
 
-   const clearFiltersButton =
+    const clearFiltersButton =
         document.getElementById("clearFilters");
 
     const resultsFilters =
         document.getElementById("resultsFilters");
-const mobileMenuToggle =
-    document.getElementById("mobileMenuToggle");
 
-const mobileMenu =
-    document.getElementById("mobileMenu");
+    const mobileMenuToggle =
+        document.getElementById("mobileMenuToggle");
+
+    const mobileMenu =
+        document.getElementById("mobileMenu");
+
 
     let courseDatabase = null;
-
     let activeCategory = null;
 
 
     /* =====================================================
-       LOAD DATABASE
+       LOAD COURSE DATABASE
        ===================================================== */
 
     async function loadCourseDatabase() {
@@ -87,7 +92,7 @@ const mobileMenu =
 
 
     /* =====================================================
-       HOMEPAGE CATEGORY SEARCH
+       COURSE CATEGORY SEARCH
        ===================================================== */
 
     if (searchInput) {
@@ -184,7 +189,7 @@ const mobileMenu =
 
 
     /* =====================================================
-       SHOW CATEGORY
+       SHOW SELECTED COURSE CATEGORY
        ===================================================== */
 
     function showCourseResults(
@@ -230,19 +235,27 @@ const mobileMenu =
             category;
 
 
-        resultsTitle.textContent =
-            category.name +
-            " in Ireland";
+        if (resultsTitle) {
+
+            resultsTitle.textContent =
+                category.name +
+                " in Ireland";
+
+        }
 
 
-        resultsMessage.textContent =
-            category.programme_count +
-            " programme options across " +
-            category.university_count +
-            " universities in the CaraVista database.";
+        if (resultsMessage) {
+
+            resultsMessage.textContent =
+                category.programme_count +
+                " programme options across " +
+                category.university_count +
+                " universities in the CaraVista database.";
+
+        }
 
 
-        populateFilters(
+        populateUniversityFilter(
             category
         );
 
@@ -270,17 +283,14 @@ const mobileMenu =
 
 
     /* =====================================================
-       POPULATE FILTER OPTIONS
+       POPULATE UNIVERSITY FILTER
        ===================================================== */
 
-    function populateFilters(
+    function populateUniversityFilter(
         category
     ) {
 
-        if (
-            !universityFilter ||
-            !qualificationFilter
-        ) {
+        if (!universityFilter) {
             return;
         }
 
@@ -288,13 +298,6 @@ const mobileMenu =
         universityFilter.innerHTML = `
             <option value="">
                 All Universities
-            </option>
-        `;
-
-
-        qualificationFilter.innerHTML = `
-            <option value="">
-                All Qualifications
             </option>
         `;
 
@@ -318,7 +321,9 @@ const mobileMenu =
             ]
             .sort(
                 function (a, b) {
+
                     return a.localeCompare(b);
+
                 }
             );
 
@@ -345,54 +350,7 @@ const mobileMenu =
         );
 
 
-        const qualifications =
-            [
-                ...new Set(
-                    category.programmes
-                        .map(
-                            function (programme) {
-
-                                return (
-                                    programme.qualification ||
-                                    ""
-                                ).trim();
-
-                            }
-                        )
-                        .filter(Boolean)
-                )
-            ]
-            .sort(
-                function (a, b) {
-                    return a.localeCompare(b);
-                }
-            );
-
-
-        qualifications.forEach(
-            function (qualification) {
-
-                const option =
-                    document.createElement(
-                        "option"
-                    );
-
-                option.value =
-                    qualification;
-
-                option.textContent =
-                    qualification;
-
-                qualificationFilter.appendChild(
-                    option
-                );
-
-            }
-        );
-
-
         universityFilter.value = "";
-        qualificationFilter.value = "";
 
 
         if (resultsFilters) {
@@ -407,7 +365,7 @@ const mobileMenu =
 
 
     /* =====================================================
-       FILTER EVENTS
+       UNIVERSITY FILTER EVENT
        ===================================================== */
 
     if (universityFilter) {
@@ -420,15 +378,9 @@ const mobileMenu =
     }
 
 
-    if (qualificationFilter) {
-
-        qualificationFilter.addEventListener(
-            "change",
-            renderFilteredResults
-        );
-
-    }
-
+    /* =====================================================
+       CLEAR FILTER
+       ===================================================== */
 
     if (clearFiltersButton) {
 
@@ -437,12 +389,11 @@ const mobileMenu =
             function () {
 
                 if (universityFilter) {
+
                     universityFilter.value = "";
+
                 }
 
-                if (qualificationFilter) {
-                    qualificationFilter.value = "";
-                }
 
                 renderFilteredResults();
 
@@ -453,7 +404,7 @@ const mobileMenu =
 
 
     /* =====================================================
-       APPLY FILTERS
+       APPLY UNIVERSITY FILTER
        ===================================================== */
 
     function renderFilteredResults() {
@@ -469,31 +420,14 @@ const mobileMenu =
                 : "";
 
 
-        const selectedQualification =
-            qualificationFilter
-                ? qualificationFilter.value
-                : "";
-
-
         const filteredProgrammes =
             activeCategory.programmes.filter(
                 function (programme) {
 
-                    const universityMatches =
+                    return (
                         !selectedUniversity ||
                         programme.university ===
-                            selectedUniversity;
-
-
-                    const qualificationMatches =
-                        !selectedQualification ||
-                        programme.qualification ===
-                            selectedQualification;
-
-
-                    return (
-                        universityMatches &&
-                        qualificationMatches
+                            selectedUniversity
                     );
 
                 }
@@ -507,31 +441,39 @@ const mobileMenu =
 
         const filteredUniversities =
             new Set(
-                filteredProgrammes.map(
-                    function (programme) {
-                        return programme.university;
-                    }
-                )
+                filteredProgrammes
+                    .map(
+                        function (programme) {
+
+                            return programme.university;
+
+                        }
+                    )
+                    .filter(Boolean)
             );
 
 
-        resultsMessage.textContent =
-            filteredProgrammes.length +
-            " programme" +
-            (
-                filteredProgrammes.length === 1
-                    ? ""
-                    : "s"
-            ) +
-            " across " +
-            filteredUniversities.size +
-            " universit" +
-            (
-                filteredUniversities.size === 1
-                    ? "y"
-                    : "ies"
-            ) +
-            ".";
+        if (resultsMessage) {
+
+            resultsMessage.textContent =
+                filteredProgrammes.length +
+                " programme" +
+                (
+                    filteredProgrammes.length === 1
+                        ? ""
+                        : "s"
+                ) +
+                " across " +
+                filteredUniversities.size +
+                " universit" +
+                (
+                    filteredUniversities.size === 1
+                        ? "y"
+                        : "ies"
+                ) +
+                ".";
+
+        }
 
     }
 
@@ -543,6 +485,11 @@ const mobileMenu =
     function renderUniversityGroups(
         programmes
     ) {
+
+        if (!programmeResults) {
+            return;
+        }
+
 
         const universityGroups = {};
 
@@ -584,7 +531,9 @@ const mobileMenu =
             )
             .sort(
                 function (a, b) {
+
                     return a.localeCompare(b);
+
                 }
             );
 
@@ -604,7 +553,7 @@ const mobileMenu =
 
                     <p>
                         Try changing or clearing
-                        the selected filters.
+                        the selected university.
                     </p>
 
                 </div>
@@ -627,21 +576,7 @@ const mobileMenu =
 
                     const programmeHTML =
                         universityProgrammes.map(
-                            function (
-                                programme
-                            ) {
-
-                                const qualification =
-                                    programme.qualification
-                                        ? `
-                                            <span class="qualification">
-                                                ${escapeHtml(
-                                                    programme.qualification
-                                                )}
-                                            </span>
-                                          `
-                                        : "";
-
+                            function (programme) {
 
                                 return `
                                     <li class="programme-item">
@@ -651,8 +586,6 @@ const mobileMenu =
                                                 programme.programme
                                             )}
                                         </div>
-
-                                        ${qualification}
 
                                     </li>
                                 `;
@@ -717,30 +650,42 @@ const mobileMenu =
         categoryName
     ) {
 
-        resultsTitle.textContent =
-            categoryName +
-            " in Ireland";
+        if (resultsTitle) {
+
+            resultsTitle.textContent =
+                categoryName +
+                " in Ireland";
+
+        }
 
 
-        resultsMessage.textContent =
-            "Loading programme and university options...";
+        if (resultsMessage) {
+
+            resultsMessage.textContent =
+                "Loading programme and university options...";
+
+        }
 
 
-        programmeResults.innerHTML = `
-            <div class="data-coming-soon">
+        if (programmeResults) {
 
-                <div class="data-coming-soon-icon">
+            programmeResults.innerHTML = `
+                <div class="data-coming-soon">
 
-                    <i class="fa-solid fa-spinner fa-spin"></i>
+                    <div class="data-coming-soon-icon">
+
+                        <i class="fa-solid fa-spinner fa-spin"></i>
+
+                    </div>
+
+                    <p>
+                        Loading CaraVista programme database...
+                    </p>
 
                 </div>
+            `;
 
-                <p>
-                    Loading CaraVista programme database...
-                </p>
-
-            </div>
-        `;
+        }
 
 
         if (resultsSection) {
@@ -763,37 +708,49 @@ const mobileMenu =
         categoryName
     ) {
 
-        resultsTitle.textContent =
-            categoryName +
-            " in Ireland";
+        if (resultsTitle) {
+
+            resultsTitle.textContent =
+                categoryName +
+                " in Ireland";
+
+        }
 
 
-        resultsMessage.textContent =
-            "Programme information for this category is not currently available.";
+        if (resultsMessage) {
+
+            resultsMessage.textContent =
+                "Programme information for this category is not currently available.";
+
+        }
 
 
-        programmeResults.innerHTML = `
-            <div class="data-coming-soon">
+        if (programmeResults) {
 
-                <div class="data-coming-soon-icon">
+            programmeResults.innerHTML = `
+                <div class="data-coming-soon">
 
-                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="data-coming-soon-icon">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                    </div>
+
+                    <p>
+                        Please contact CaraVista
+                        for personalised course guidance.
+                    </p>
 
                 </div>
+            `;
 
-                <p>
-                    Please contact CaraVista
-                    for personalised course guidance.
-                </p>
-
-            </div>
-        `;
+        }
 
     }
 
 
     /* =====================================================
-       SAFE TEXT
+       SAFE TEXT OUTPUT
        ===================================================== */
 
     function escapeHtml(text) {
@@ -809,67 +766,76 @@ const mobileMenu =
         return element.innerHTML;
 
     }
-/* =====================================================
-   MOBILE MENU
-   ===================================================== */
-
-if (
-    mobileMenuToggle &&
-    mobileMenu
-) {
-
-    mobileMenuToggle.addEventListener(
-        "click",
-        function () {
-
-            const isOpen =
-                mobileMenu.classList.toggle(
-                    "active"
-                );
-
-            mobileMenuToggle.setAttribute(
-                "aria-expanded",
-                String(isOpen)
-            );
-
-            mobileMenuToggle.innerHTML =
-                isOpen
-                    ? '<i class="fa-solid fa-xmark"></i>'
-                    : '<i class="fa-solid fa-bars"></i>';
-
-        }
-    );
 
 
-    mobileMenu.querySelectorAll("a").forEach(
-        function (link) {
+    /* =====================================================
+       MOBILE MENU
+       ===================================================== */
 
-            link.addEventListener(
-                "click",
-                function () {
+    if (
+        mobileMenuToggle &&
+        mobileMenu
+    ) {
 
-                    mobileMenu.classList.remove(
+        mobileMenuToggle.addEventListener(
+            "click",
+            function () {
+
+                const isOpen =
+                    mobileMenu.classList.toggle(
                         "active"
                     );
 
-                    mobileMenuToggle.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
 
-                    mobileMenuToggle.innerHTML =
-                        '<i class="fa-solid fa-bars"></i>';
+                mobileMenuToggle.setAttribute(
+                    "aria-expanded",
+                    String(isOpen)
+                );
+
+
+                mobileMenuToggle.innerHTML =
+                    isOpen
+                        ? '<i class="fa-solid fa-xmark"></i>'
+                        : '<i class="fa-solid fa-bars"></i>';
+
+            }
+        );
+
+
+        mobileMenu
+            .querySelectorAll("a")
+            .forEach(
+                function (link) {
+
+                    link.addEventListener(
+                        "click",
+                        function () {
+
+                            mobileMenu.classList.remove(
+                                "active"
+                            );
+
+
+                            mobileMenuToggle.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+
+                            mobileMenuToggle.innerHTML =
+                                '<i class="fa-solid fa-bars"></i>';
+
+                        }
+                    );
 
                 }
             );
 
-        }
-    );
+    }
 
-}
 
     console.log(
-        "CaraVista Course Finder filters loaded successfully."
+        "CaraVista Course Finder loaded successfully."
     );
 
 });
