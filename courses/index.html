@@ -10,19 +10,604 @@
     <title>
         Explore Courses in Ireland | CaraVista Global Education
     </title>
+
+    <meta name="description"
+          content="Explore popular study areas in Ireland with CaraVista Global Education. Discover courses in technology, business, engineering, life sciences and more.">
+
+    <link rel="icon"
+          href="../images/favicon.ico">
+
+    <link rel="stylesheet"
+          href="course.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-    <h1>Explore Courses in Ireland</h1>
+<header class="course-header">
 
-    <p>
-        CaraVista Course Finder – Development Version
-    </p>
+    <div class="container header-inner">
 
-    <p>
-        This page is currently being developed and tested.
-    </p>
+        <a href="../"
+           class="brand"
+           aria-label="CaraVista Global Education">
+
+            <img src="../images/logo.png"
+                 alt="CaraVista Global Education">
+
+        </a>
+
+        <nav class="course-nav">
+
+            <a href="../">
+                Home
+            </a>
+
+            <a href="#course-grid">
+                Courses
+            </a>
+
+            <a href="#guidance">
+                Get Guidance
+            </a>
+
+        </nav>
+
+        <a href="../#contact"
+           class="header-cta">
+
+            Free Consultation
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="course-hero">
+
+        <div class="container course-hero-content">
+
+            <span class="eyebrow">
+                STUDY IN IRELAND
+            </span>
+
+            <h1>
+                Explore Courses in Ireland
+            </h1>
+
+            <p>
+                Discover career-focused study areas and explore the
+                programme opportunities available across Irish higher
+                education institutions.
+            </p>
+
+            <div class="search-wrapper">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    id="courseSearch"
+                    placeholder="Search courses such as AI, Finance, Cyber Security..."
+                    autocomplete="off"
+                    aria-label="Search course categories"
+                >
+
+            </div>
+
+            <p class="development-note">
+                Course and university information will be progressively
+                connected to the CaraVista programme database.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="courses-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    EXPLORE YOUR OPTIONS
+                </span>
+
+                <h2>
+                    Popular Study Areas
+                </h2>
+
+                <p>
+                    Choose a study area to begin exploring programme and
+                    university options in Ireland.
+                </p>
+
+            </div>
+
+
+            <div class="course-grid"
+                 id="course-grid">
+
+
+                <article class="course-card"
+                         data-course="computer science software computing technology">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3>
+                        Computer Science
+                    </h3>
+
+                    <p>
+                        Explore software, computing and advanced
+                        technology programmes.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Computer Science">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="artificial intelligence ai machine learning">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <h3>
+                        Artificial Intelligence
+                    </h3>
+
+                    <p>
+                        Explore AI, machine learning and intelligent
+                        systems programmes.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Artificial Intelligence">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="data science analytics statistics">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h3>
+                        Data Science
+                    </h3>
+
+                    <p>
+                        Discover data, analytics and statistical
+                        technology programmes.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Data Science">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="cyber security cybersecurity information security network">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>
+                        Cyber Security
+                    </h3>
+
+                    <p>
+                        Explore digital, network and information
+                        security programmes.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Cyber Security">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="business analytics data business intelligence">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+
+                    <h3>
+                        Business Analytics
+                    </h3>
+
+                    <p>
+                        Combine business decision-making with
+                        data-driven analysis.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Business Analytics">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="finance fintech investment banking financial">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+
+                    <h3>
+                        Finance
+                    </h3>
+
+                    <p>
+                        Explore finance, investment and financial
+                        technology pathways.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Finance">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="business management international business mba">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3>
+                        Business &amp; Management
+                    </h3>
+
+                    <p>
+                        Explore management, strategy and international
+                        business programmes.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Business & Management">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="digital marketing marketing advertising media">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+
+                    <h3>
+                        Digital Marketing
+                    </h3>
+
+                    <p>
+                        Explore digital marketing, strategy and
+                        communication pathways.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Digital Marketing">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="engineering mechanical civil electrical electronic">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+
+                    <h3>
+                        Engineering
+                    </h3>
+
+                    <p>
+                        Explore mechanical, civil, electronic and
+                        advanced engineering disciplines.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Engineering">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="biotechnology biotech bioprocessing biomolecular">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+
+                    <h3>
+                        Biotechnology
+                    </h3>
+
+                    <p>
+                        Discover biotechnology, bioprocessing and
+                        biomolecular study opportunities.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Biotechnology">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="pharmaceutical sciences pharma drug medicine">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-capsules"></i>
+                    </div>
+
+                    <h3>
+                        Pharmaceutical Sciences
+                    </h3>
+
+                    <p>
+                        Explore pharmaceutical science, technology
+                        and related programmes.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Pharmaceutical Sciences">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+
+                <article class="course-card"
+                         data-course="sustainability environmental sustainable resource climate">
+
+                    <div class="course-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <h3>
+                        Sustainability
+                    </h3>
+
+                    <p>
+                        Explore sustainability, environmental and
+                        resource-management programmes.
+                    </p>
+
+                    <button type="button"
+                            class="course-link"
+                            data-category="Sustainability">
+
+                        View University Options
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </article>
+
+            </div>
+
+
+            <p class="no-results"
+               id="noResults">
+
+                No matching course category found.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="results-section"
+             id="course-results">
+
+        <div class="container">
+
+            <div class="results-placeholder">
+
+                <div class="placeholder-icon">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+
+                <h2 id="resultsTitle">
+                    University Options
+                </h2>
+
+                <p id="resultsMessage">
+                    Select a course above to view university and
+                    programme options.
+                </p>
+
+                <div id="programmeResults"
+                     class="programme-results">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="guidance-section"
+             id="guidance">
+
+        <div class="container guidance-box">
+
+            <div>
+
+                <span class="section-label">
+                    NEED HELP CHOOSING?
+                </span>
+
+                <h2>
+                    Get Personalised Course Guidance
+                </h2>
+
+                <p>
+                    Tell us about your academic background and career goals.
+                    CaraVista can help you identify suitable course and
+                    university options in Ireland.
+                </p>
+
+            </div>
+
+            <div class="guidance-actions">
+
+                <a href="../#contact"
+                   class="btn btn-primary">
+
+                    Book Free Consultation
+
+                </a>
+
+                <a href="https://wa.me/917820959808?text=Hello%20CaraVista%20Global%20Education,%20I%20would%20like%20guidance%20on%20courses%20in%20Ireland."
+                   class="btn btn-whatsapp"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    WhatsApp Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="course-footer">
+
+    <div class="container">
+
+        <h3>
+            CaraVista Global Education
+        </h3>
+
+        <p>
+            Admissions • Visa Guidance • End-to-End Student Support
+        </p>
+
+        <p class="partner-line">
+            In partnership with Techfynder, Ireland.
+        </p>
+
+        <p class="disclaimer">
+            Programme and university information is provided for
+            educational guidance and does not imply institutional
+            representation or endorsement.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="course.js"></script>
 
 </body>
 
