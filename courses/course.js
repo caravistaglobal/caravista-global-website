@@ -1,7 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
     const searchInput = document.getElementById("courseSearch");
     const courseCards = document.querySelectorAll(".course-card");
+    const courseButtons = document.querySelectorAll(".course-link");
+
     const noResults = document.getElementById("noResults");
 
     const resultsSection = document.getElementById("course-results");
@@ -9,16 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultsMessage = document.getElementById("resultsMessage");
     const programmeResults = document.getElementById("programmeResults");
 
-    const courseButtons = document.querySelectorAll(".course-link");
-
 
     /* =====================================================
-       1. COURSE SEARCH
+       SEARCH FUNCTION
        ===================================================== */
 
     if (searchInput) {
 
-        searchInput.addEventListener("input", () => {
+        searchInput.addEventListener("input", function () {
 
             const searchTerm =
                 searchInput.value
@@ -27,26 +27,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let visibleCount = 0;
 
-            courseCards.forEach((card) => {
+            courseCards.forEach(function (card) {
 
-                const searchData =
+                const searchableText =
                     (
-                        card.dataset.course +
+                        (card.dataset.course || "") +
                         " " +
                         card.textContent
-                    )
-                    .toLowerCase();
+                    ).toLowerCase();
 
-                const matches =
-                    searchData.includes(searchTerm);
+                const isMatch =
+                    searchableText.includes(searchTerm);
 
-                card.classList.toggle(
-                    "hidden",
-                    !matches
-                );
+                if (isMatch) {
 
-                if (matches) {
+                    card.classList.remove("hidden");
+
                     visibleCount++;
+
+                } else {
+
+                    card.classList.add("hidden");
+
                 }
 
             });
@@ -67,17 +69,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       2. COURSE CARD BUTTONS
+       COURSE BUTTON CLICK
        ===================================================== */
 
-    courseButtons.forEach((button) => {
+    courseButtons.forEach(function (button) {
 
-        button.addEventListener("click", () => {
+        button.addEventListener("click", function () {
 
             const category =
-                button.dataset.category;
+                button.getAttribute("data-category");
 
-            showCategoryPlaceholder(category);
+            if (!category) {
+
+                console.error(
+                    "Course category missing on button."
+                );
+
+                return;
+
+            }
+
+            showCourseResults(category);
 
         });
 
@@ -85,25 +97,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       3. PLACEHOLDER RESULTS
-       Until courses.json is connected
+       SHOW RESULTS PLACEHOLDER
        ===================================================== */
 
-    function showCategoryPlaceholder(category) {
+    function showCourseResults(category) {
 
-        if (
-            !resultsTitle ||
-            !resultsMessage ||
-            !programmeResults
-        ) {
+        if (!resultsTitle) {
+
+            console.error(
+                "resultsTitle element not found."
+            );
+
             return;
+
         }
 
+        if (!resultsMessage) {
+
+            console.error(
+                "resultsMessage element not found."
+            );
+
+            return;
+
+        }
+
+        if (!programmeResults) {
+
+            console.error(
+                "programmeResults element not found."
+            );
+
+            return;
+
+        }
+
+
         resultsTitle.textContent =
-            `${category} in Ireland`;
+            category + " in Ireland";
+
 
         resultsMessage.textContent =
-            `University and programme options for ${category} will be displayed here once the CaraVista programme database is connected.`;
+            "University and programme options for " +
+            category +
+            " will appear here once the CaraVista course database is connected.";
+
 
         programmeResults.innerHTML = `
             <div class="data-coming-soon">
@@ -117,24 +155,30 @@ document.addEventListener("DOMContentLoaded", () => {
                 </h3>
 
                 <p>
-                    We are preparing verified programme and university
-                    options for <strong>${escapeHtml(category)}</strong>.
+                    We are preparing programme and university
+                    options for
+                    <strong>${escapeHtml(category)}</strong>.
                 </p>
 
                 <p class="data-note">
-                    The next development stage will connect this section
-                    to the Excel-derived CaraVista course database.
+                    This section will shortly be connected to
+                    the Excel-derived CaraVista course database.
                 </p>
 
             </div>
         `;
 
+
         if (resultsSection) {
 
-            resultsSection.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
+            setTimeout(function () {
+
+                resultsSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }, 100);
 
         }
 
@@ -142,60 +186,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       4. SAFE TEXT OUTPUT
+       SAFE TEXT
        ===================================================== */
 
     function escapeHtml(text) {
 
-        const div =
+        const temp =
             document.createElement("div");
 
-        div.textContent = text;
+        temp.textContent = text;
 
-        return div.innerHTML;
+        return temp.innerHTML;
 
     }
 
+
+    console.log(
+        "CaraVista Course Finder JavaScript loaded successfully."
+    );
+
 });
-/* =========================================================
-   21. COURSE DATA PLACEHOLDER
-   ========================================================= */
-
-.data-coming-soon {
-    margin-top: 30px;
-    padding: 28px 24px;
-    background: #ffffff;
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    box-shadow: var(--shadow);
-}
-
-.data-coming-soon-icon {
-    width: 54px;
-    height: 54px;
-    margin: 0 auto 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(7, 135, 92, 0.10);
-    color: var(--green);
-    font-size: 22px;
-}
-
-.data-coming-soon h3 {
-    color: var(--primary);
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.data-coming-soon p {
-    color: var(--text-light);
-    font-size: 14px;
-}
-
-.data-note {
-    margin-top: 8px;
-    font-size: 12px !important;
-    opacity: 0.8;
-}
