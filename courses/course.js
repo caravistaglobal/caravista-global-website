@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const resultsFilters =
         document.getElementById("resultsFilters");
+const mobileMenuToggle =
+    document.getElementById("mobileMenuToggle");
 
+const mobileMenu =
+    document.getElementById("mobileMenu");
 
     let courseDatabase = null;
 
@@ -808,7 +812,64 @@ document.addEventListener("DOMContentLoaded", function () {
         return element.innerHTML;
 
     }
+/* =====================================================
+   MOBILE MENU
+   ===================================================== */
 
+if (
+    mobileMenuToggle &&
+    mobileMenu
+) {
+
+    mobileMenuToggle.addEventListener(
+        "click",
+        function () {
+
+            const isOpen =
+                mobileMenu.classList.toggle(
+                    "active"
+                );
+
+            mobileMenuToggle.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
+
+            mobileMenuToggle.innerHTML =
+                isOpen
+                    ? '<i class="fa-solid fa-xmark"></i>'
+                    : '<i class="fa-solid fa-bars"></i>';
+
+        }
+    );
+
+
+    mobileMenu.querySelectorAll("a").forEach(
+        function (link) {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    mobileMenu.classList.remove(
+                        "active"
+                    );
+
+                    mobileMenuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    mobileMenuToggle.innerHTML =
+                        '<i class="fa-solid fa-bars"></i>';
+
+                }
+            );
+
+        }
+    );
+
+}
 
     console.log(
         "CaraVista Course Finder filters loaded successfully."
