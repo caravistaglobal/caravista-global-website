@@ -27,10 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const universityFilter =
         document.getElementById("universityFilter");
 
-    const qualificationFilter =
-        document.getElementById("qualificationFilter");
-
-    const clearFiltersButton =
+   const clearFiltersButton =
         document.getElementById("clearFilters");
 
     const resultsFilters =
